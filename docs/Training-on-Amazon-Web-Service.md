@@ -43,11 +43,11 @@ This is scheduled to be fixed in 2017.3.
 
 ## Testing
 
-If all steps worked correctly, upload an example binary built for Linux to the instance, and test it from python with:
+If all steps worked correctly, upload an example binary built for Linux to the instance, and test it from Python with:
 ```python
 from unityagents import UnityEnvironment
 
 env = UnityEnvironment(your_env)
 ```
 
-You should receive a message confirming that the environment was loaded succesfully.
+You should receive a message confirming that the environment was loaded successfully.
