@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>3D Balance Ball &#29615;&#22659;&#20837;&#38376; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="3D Balance Ball &#29615;&#22659;&#20837;&#38376; ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="active">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="active">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                    </li>
+                    <li class="active">
+                      <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="active">Getting Started with the 3D Balance Ball Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="3d-balance-ball-环境入门">3D Balance Ball 环境入门</h1>
+
+<p>本教程介绍在 Unity 中打开 ML-Agents 示例环境、
+构建 Unity 可执行文件、在其中训练 agent 以及
+最终将经过训练的模型嵌入到 Unity 环境中的端到端过程。</p>
+<p>ML-Agents 包含大量<a href="Learning-Environment-Examples.html">示例环境</a>，
+您可以通过这些环境来了解 ML-Agents 的
+不同使用方式。这些环境也可以用作新环境的模板
+或用作测试新 ML 算法的方法。阅读本教程后，
+您应该能够了解并构建示例环境。</p>
+<p><img src="../images/balance.png" alt="3D Balance Ball"></p>
+<p>本演练过程将使用 <strong>3D Balance Ball</strong> 环境。3D Balance Ball 包含
+大量平台和球（它们都是彼此的副本）。
+每个平台都会试图通过水平或垂直旋转的方式
+防止球掉落。在这种环境下，平台是一个 <strong>agent</strong>，
+可以在对球进行平衡的每一步中获得奖励。agent 也会
+因为掉球而得到负奖励（惩罚）。训练过程的
+目标是让平台学会绝不掉球。</p>
+<p>让我们开始吧！</p>
+<h2 id="安装">安装</h2>
+<p>为了安装和设置 ML-Agents、Python 所依赖的库和 Unity 软件，
+请参阅<a href="Installation.html">安装说明</a>。</p>
+<h2 id="了解-unity-环境-3d-balance-ball">了解 Unity 环境 (3D Balance Ball)</h2>
+<p>agent 是一种观测并与_环境_交互的
+自主参与者 (actor)。在 ML-Agent的语境下，环境是一个包含一个 Academy， 一个或多个 Brain， 一个或多个Agent， Agent 与其他实体交互的场景。</p>
+<p><img src="../images/mlagents-3DBallHierarchy.png" alt="Unity Editor"></p>
+<p><strong>注意：</strong>在 Unity 中，场景内所有元素的基础对象均为
+<em>游戏对象</em>(GameObject)。游戏对象本质上是其他任何元素
+（包括行为、图形、物理等）的容器。要查看组成游戏对象的组件，
+请在 Scene 窗口中选择 GameObject，然后打开 
+Inspector 窗口。Inspector 会显示游戏对象上的每个组件。</p>
+<p>在打开 3D Balance Ball 场景后，您可能会首先注意到它包含的
+不是一个平台，而是多个平台。场景中的每个平台都是
+独立的 agent，但它们全部共享同一个 brain。3D Balance Ball 通过
+这种方式可以加快训练速度，因为所有 12 个 agent 可以并行参与训练任务。</p>
+<h3 id="academy">Academy</h3>
+<p>在这个示例场景中的 Academy 对象是 Ball3DAcademy 游戏对象。
+当您在 Inspector 中查看该 Academy 组件时，可以看到若干
+用于控制环境工作方式的属性。例如，Inspector中可以看到
+<strong>Training</strong> 和 <strong>Inference Configuration</strong> 属性， 在其中我们可以设置之后生成的 Unity 可执行文件的
+图形和 Time Scale 属性。Academy 在训练期间使用 
+<strong>Training Configuration</strong>，而在不训练时使用 
+<strong>Inference Configuration</strong>。（<em>Inference</em> 等同于<strong>不</strong>进行训练的任何时候，此时 agent 可以使用经过训练的模型控制，或用写定的代码控制，或让玩家直接控制。）
+通常情况下，您需要为 <strong>Training configuration</strong> 设置低图形质量
+和高Time Scale，而为 <strong>Inference Configuration</strong> 设置高图形质量和 
+<code>1.0</code> 的Time Scale。</p>
+<p><strong>注意：</strong>如果您想在训练期间观测环境，则可以调整 
+<strong>Inference Configuration</strong> 设置来使用更大的窗口和更接近 
+1:1 的时间刻度。当你要正式训练时一定要重新设置这些参数；
+否则，训练可能需要很长时间。</p>
+<p>对于环境，另一个需要关注的方面是 Academy 的实现。
+由于 Academy 基类是抽象的，您必须始终定义一个子类。
+您可以实现以下三个函数，但这些函数都是可选的：</p>
+<ul>
+<li>Academy.InitializeAcademy() — 启动环境时调用一次。</li>
+<li>Academy.AcademyStep() — 在 
+Agent.AgentAction() 之前（以及 agent 收集其观测结果之后）的每个模拟步骤调用。</li>
+<li>Academy.AcademyReset() — 在 Academy 开始或重新开始模拟
+（包括第一次）时调用。</li>
+</ul>
+<p>3D Balance Ball 环境不使用这些函数（每个 agent 在需要时
+会自行重置），但许多环境都会使用这些函数来
+控制 agent 周围的环境。</p>
+<h3 id="brain">Brain</h3>
+<p>场景中的 Ball3DBrain 游戏对象包含 Brain 组件，
+是 Academy 对象的子级。（场景中的所有 Brain 对象都必须是 
+Academy 的子级。）3D Balance Ball 环境中的所有 agent 使用
+同一个 Brain 实例。
+Brain 不存储关于 agent 的任何信息，
+只是将 agent 收集的观测结果发送到决策过程，
+然后将所选的动作返回给 agent。因此，所有 agent 可共享
+同一个 brain，但会独立行动。Brain 设置可以提供很多
+关于 agent 工作方式的信息。</p>
+<p><strong>Brain Type</strong> 决定了 agent 如何决策。
+<strong>External</strong> 和 <strong>Internal</strong> 类型需要协同使用：训练 agent 时使用 <strong>External</strong>，
+而在采用经过训练的模型时使用 <strong>Internal</strong>。
+<strong>Heuristic</strong> brain 允许您通过扩展 Decision 类来对 agent 的逻辑进行
+手动编码。最后，<strong>Player</strong> brain 可让您将键盘命令
+映射到动作，这样在测试 agent 和环境时
+会非常有用。如果这些类型的 brain 都不能满足您的需求，您可以
+实现自己的 CoreBrain 来创建自有的类型。</p>
+<p>在本教程中，进行训练时，需要将 <strong>Brain Type</strong> 设置为 <strong>External</strong>；
+当您将经过训练的模型嵌入到 Unity 应用程序中时，需要将 
+<strong>Brain Type</strong> 更改为 <strong>Internal</strong>。</p>
+<p><strong>向量观测空间</strong></p>
+<p>在决策之前，agent 会收集有关自己在环境中所处的状态的
+观测结果。ML-Agents 将观测分为两类：
+<strong>Continuous</strong> 和 <strong>Discrete</strong>。<strong>Continuous</strong> 向量观测空间
+会收集浮点数向量中的观测结果。<strong>Discrete</strong> 
+向量观测空间是一个状态表的索引。大多数示例环境
+都使用连续的向量观测空间。</p>
+<p>3D Balance Ball 示例中所用的 Brain 实例使用 <strong>State Size</strong> 为 8 的 
+<strong>Continuous</strong> 向量观测空间。这意味着
+包含 agent 观测结果的特征向量包含八个元素：
+平台旋转的 <code>x</code> 和 <code>z</code> 分量以及球相对位置和
+速度的 <code>x</code>、<code>y</code> 和 <code>z</code> 分量。（观测结果值
+在 agent 的 <code>CollectObservations()</code> 函数中进行定义。）</p>
+<p><strong>向量运动空间</strong></p>
+<p>brain 以<em>动作</em>的形式向 agent 提供指令。与状态
+一样，ML-Agents 将动作分为两种类型：<strong>Continuous</strong> 
+向量运动空间是一个可以连续变化的数字向量。向量
+每个元素的含义都是由 agent 逻辑定义的（PPO 训练过程是一个了解agent的哪种状态更好的过程，这个过程是通过学习不同agent的不同状态会对应多少奖励来实现的）。
+例如，一个元素可能表示施加到 agent 某个 
+<code>RigidBody</code> 上的力或扭矩。<strong>Discrete</strong> 向量运动空间将其动作
+定义为一个表。提供给 agent 的具体动作是这个表的
+索引。</p>
+<p>根据设计，3D Balance Ball 示例会使用这两种类型的向量运动
+空间。
+您可以尝试使用两种设置进行训练，观测是否有
+差异。（使用离散运动空间时将 <code>Vector Action Space Size</code> 设置为 4，
+而使用连续运动空间时将其设置为 2。）</p>
+<h3 id="agent">Agent</h3>
+<p>Agent 是在环境中进行观测并采取动作的参与者。
+在 3D Balance Ball 环境中，Agent 组件被放置在 12 个
+平台游戏对象上。基础 Agent 对象有一些影响其行为的
+属性：</p>
+<ul>
+<li><strong>Brain</strong> — 每个 Agent 必须有一个 Brain。brain 决定了 agent 如何
+决策。3D Balance Ball 场景中的所有 agent 共享同一个 
+brain。</li>
+<li><strong>Visual Observations</strong> — 定义 agent 用来观测其环境的
+任何 Camera 对象。3D Balance Ball 不使用摄像机观测。</li>
+<li><strong>Max Step</strong> — 定义在 agent 决定自己完成之前可以发生多少个
+模拟步骤。在 3D Balance Ball 中，agent 在 5000 步之后重新开始。</li>
+<li><strong>Reset On Done</strong> — 定义 agent 是否在完成时重新开始。
+3D Balance Ball 将此项设置为 true，因此 agent 在达到 
+<strong>Max Step</strong> 计数后或在掉球后重新开始。</li>
+</ul>
+<p>也许 agent 更有趣的方面在于 Agent 子类的
+实现。在创建 agent 时，您必须扩展 Agent 基类。
+Ball3DAgent 子类定义了以下方法：</p>
+<ul>
+<li>Agent.AgentReset() — Agent 重置时（包括会话开始时）
+调用。Ball3DAgent 类使用重置函数来重置
+平台和球。该函数会将重置值随机化，从而使
+训练不局限于特定的开始位置和平台
+姿态。</li>
+<li>Agent.CollectObservations() — 在每个模拟步骤调用。负责
+收集 agent 对环境的观测结果。由于分配给 
+agent 的 Brain 实例设置为状态大小为 8 的连续向量观测空间，
+因此 <code>CollectObservations()</code> 必须调用 8 次 
+<code>AddVectorObs</code>。</li>
+<li>Agent.AgentAction() — 在每个模拟步骤调用。接收 brain 选择的
+动作。Ball3DAgent 示例可以处理连续和离散
+运动空间类型。在此环境中，两种状态类型之间实际上
+没有太大的差别：这两种向量运动空间在每一步都会
+导致平台旋转发生小变化。<code>AgentAction()</code> 函数
+为 agent 分配奖励；在此示例中，agent 在每一步
+将球保持在平台上时收到较小的正奖励，
+而在掉球时收到更大的负奖励。agent 在掉球时还会被标记为
+完成状态，因此会重置一个用于下一模拟步骤的
+新球。</li>
+</ul>
+<h2 id="构建环境">构建环境</h2>
+<p>第一步是打开包含 3D Balance Ball 环境的 
+Unity 场景：</p>
+<ol>
+<li>启动 Unity。</li>
+<li>在 Projects 对话框上，选择窗口顶部的 <strong>Open</strong> 选项。</li>
+<li>使用随后打开的文件对话框，找到 ML-Agents 项目内的 
+<code>unity-environment</code> 文件夹，然后单击 <strong>Open</strong>。</li>
+<li>在 <code>Project</code> 窗口中，找到文件夹 
+<code>Assets/ML-Agents/Examples/3DBall/</code>。</li>
+<li>双击 <code>Scene</code> 文件以加载包含 Balance Ball 环境的
+场景。</li>
+</ol>
+<p><img src="../images/mlagents-Open3DBall.png" alt="3DBall 场景"></p>
+<p>由于我们要建立此环境来进行训练，因此我们需要
+将 agent 使用的 brain 设置为 <strong>External</strong>。这样 agent 在
+进行决策时能够与外部训练过程进行通信。</p>
+<ol>
+<li>在 <strong>Scene</strong> 窗口中，单击 Ball3DAcademy 对象旁边的三角形
+图标。</li>
+<li>选择其子对象 <code>Ball3DBrain</code>。</li>
+<li>在 Inspector 窗口中，将 <strong>Brain Type</strong> 设置为 <code>External</code>。</li>
+</ol>
+<p><img src="../images/mlagents-SetExternalBrain.png" alt="将 Brain 设置为 External"></p>
+<p>接下来，我们希望设置场景以便在训练过程启动我们的环境可执行文件时
+正确播放场景。这意味着：</p>
+<ul>
+<li>环境应用程序在后台运行</li>
+<li>没有对话需要互动</li>
+<li>正确的场景会自动加载</li>
+</ul>
+<ol>
+<li>打开 Player Settings（菜单：<strong>Edit</strong> &gt; <strong>Project Settings</strong> &gt; <strong>Player</strong>）。</li>
+<li>在 <strong>Resolution and Presentation</strong> 下方：<ul>
+<li>确保选中 <strong>Run in Background</strong>。</li>
+<li>确保 <strong>Display Resolution Dialog</strong> 设置为 Disabled。</li>
+</ul>
+</li>
+<li>打开 Build Settings 窗口（菜单：<strong>File</strong> &gt; <strong>Build Settings</strong>）。</li>
+<li>选择目标平台。
+ -（可选）选择“Development Build”以便
+ <a href="https://docs.unity3d.com/Manual/LogFiles.html">记录调试消息</a>。</li>
+<li>如果 <strong>Scenes in Build</strong> 列表中显示了任何场景，请确保
+唯一选中的是 3DBall Scene。（如果该列表为空，则表示
+仅当前场景包含在编译中）。</li>
+<li>单击 <em>Build</em>：
+ a. 在 File 对话框中，导航至 ML-Agents 目录中的 <code>python</code>
+ 文件夹。
+ b. 指定文件名，然后单击 <strong>Save</strong>。</li>
+</ol>
+<p><img src="../images/mlagents-BuildWindow.png" alt="编译窗口"></p>
+<h2 id="使用-reinforcement-learning强化学习来训练-brain">使用 Reinforcement Learning（强化学习）来训练 Brain</h2>
+<p>有了一个包含模拟环境的 Unity 可执行文件后，现在我们
+可以执行训练。为了首先确保您的环境和 Python 
+API 能正常工作，您可以使用 <code>python/Basics</code> 
+<a href="/docs/Background-Jupyter.md">Jupyter 笔记本</a>。
+此笔记本包含了 API 功能的简单演练。
+在 <code>Basics</code> 中，务必将 <code>env_name</code> 设置为您先前构建的
+环境文件的名称。</p>
+<h3 id="使用-ppo-进行训练">使用 PPO 进行训练</h3>
+<p>为了训练 agent 对球进行正确平衡，我们将使用一种称为 Proximal Policy Optimization (PPO) 的 
+Reinforcement Learning（强化学习）算法。
+与其他许多 RL 算法相比，这种算法经证明是一种安全、
+有效且更通用的方法，因此我们选择它作为与 ML-Agents 
+一起使用的示例算法。有关 PPO 的更多信息，
+请参阅 OpenAI 近期发布的<a href="https://blog.openai.com/openai-baselines-ppo/">博客文章</a>，
+其中对 PPO 进行了说明。</p>
+<p>为了训练 Balance Ball 环境中的 agent，我们将使用 Python 
+包。我们提供了一个名为 <code>learn.py</code> 的方便的 Python 包装脚本，此脚本会接受用于配置训练和预测阶段的参数。</p>
+<p>我们将向这个脚本传递我们刚才构建的环境可执行文件的路径。（可选）我们可以
+使用 <code>run_id</code> 来识别实验并创建用于存储模型和摘要统计信息的文件夹。当使用 
+TensorBoard 来观测训练统计信息时，将每次训练的此项设置为顺序值
+将会很有用。也就是说，第一次训练时为“BalanceBall1”，
+第二次训练时为“BalanceBall2”，依此类推。如果不这样做，每次训练的
+摘要信息都会保存在同一个目录中，并且全部将包含在
+同一个图中。</p>
+<p>总之，转到命令行，进入 <code>ml-agents</code> 目录并输入：</p>
+<pre><code class="lang-python">python3 python/learn.py &lt;env_file_path&gt; --run-id=&lt;run-identifier&gt; --train 
+</code></pre><p><code>--train</code> 标志告诉 ML-Agents 以训练模式运行。<code>env_file_path</code> 应该是刚才创建的 Unity 可执行文件的路径。</p>
+<h3 id="观测训练进度">观测训练进度</h3>
+<p>开始使用 <code>learn.py</code> 按照前面部分所述的方式进行训练后，<code>ml-agents</code> 文件夹将
+包含一个 <code>summaries</code> 目录。为了更详细地观测训练过程，
+您可以使用 TensorBoard。从命令行中运行：</p>
+<p><code>tensorboard --logdir=summaries</code></p>
+<p>然后导航至 <code>localhost:6006</code>。</p>
+<p>从 TensorBoard 中，您将看到摘要统计信息：</p>
+<ul>
+<li>Lesson - 只有在进行
+<a href="/docs/Training-Curriculum-Learning.md">课程训练</a>时才有意义。
+3D Balance Ball 环境中不使用此项。</li>
+<li>Cumulative Reward - 所有 agent 的平均累积场景奖励。
+在成功训练期间应该增大。</li>
+<li>Entropy - 模型决策的随机程度。在成功训练过程中
+应该缓慢减小。如果减小得太快，应增大 <code>beta</code> 
+超参数。</li>
+<li>Episode Length - 所有 agent 在环境中每个场景的
+平均长度。</li>
+<li>Learning Rate - 训练算法搜索最优 policy 时需要多大的
+步骤。随着时间推移应该减小。</li>
+<li>Policy Loss - policy 功能更新的平均损失。与 policy
+（决定动作的过程）的变化程度相关。此项的幅度
+在成功训练期间应该减小。</li>
+<li>Value Estimate - agent 访问的所有状态的平均价值估算。
+在成功训练期间应该增大。</li>
+<li>Value Loss - 价值功能更新的平均损失。与模型
+对每个状态的价值进行预测的能力相关。此项
+在成功训练期间应该减小。</li>
+</ul>
+<p><img src="../images/mlagents-TensorBoard.png" alt="TensorBoard 运行示例"></p>
+<h2 id="将经过训练的-brain-嵌入到-unity-环境中测试功能">将经过训练的 Brain 嵌入到 Unity 环境中（测试功能）</h2>
+<p>一旦训练过程完成，并且训练过程保存了模型
+（通过 <code>Saved Model</code> 消息可看出），您便可以将该模型添加到 Unity 项目中，
+然后将其用于 brain 类型为 <strong>Internal</strong> 的 agent。</p>
+<h3 id="设置-tensorflowsharp-支持">设置 TensorFlowSharp 支持</h3>
+<p>由于 TensorFlowSharp 支持仍处于实验阶段，因此默认情况下会
+将其禁用。为了启用这项支持，必须遵循以下步骤。请注意，
+只有完成这些步骤后才能使用 <code>Internal</code> Brain 模式。</p>
+<ol>
+<li>确保 TensorFlowSharp 插件位于 <code>Assets</code> 文件夹中。
+可在
+<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/TFSharpPlugin.unitypackage">此处</a>下载一个包含 TF# 的 Plugins 文件夹。
+下载后，双击并将其导入。您可以在 Project 选项卡中
+（位于 <code>Assets</code> &gt; <code>ML-Agents</code> &gt; <code>Plugins</code> &gt; <code>Computer</code> 下）
+检查 TensorFlow 的相关文件来查看是否安装成功</li>
+<li>转到 <code>Edit</code> &gt; <code>Project Settings</code> &gt; <code>Player</code></li>
+<li>对于每个目标平台
+（<strong><code>PC, Mac and Linux Standalone</code></strong>、<strong><code>iOS</code></strong> 或 <strong><code>Android</code></strong>）：
+ 1.转到 <code>Other Settings</code>。
+ 2.选择 <code>Scripting Runtime Version</code> 为
+ <code>Experimental (.NET 4.6 Equivalent)</code>
+ 3.在 <code>Scripting Defined Symbols</code> 中，添加标志 <code>ENABLE_TENSORFLOW</code>。
+ 输入后，按 Enter。</li>
+<li>转到 <code>File</code> &gt; <code>Save Project</code></li>
+<li>重新启动 Unity Editor。</li>
+</ol>
+<h3 id="将经过训练的模型嵌入到-unity-中">将经过训练的模型嵌入到 Unity 中</h3>
+<ol>
+<li>经过训练的模型存储在 <code>ml-agents</code> 文件夹中的 <code>models/&lt;run-identifier&gt;</code> 内。训练
+完成后，该位置会有一个 <code>&lt;env_name&gt;.bytes</code> 文件，其中的 <code>&lt;env_name&gt;</code> 是训练期间使用的可执行文件的
+名称。</li>
+<li>将 <code>&lt;env_name&gt;.bytes</code> 从 <code>python/models/ppo/</code> 移入 
+<code>unity-environment/Assets/ML-Agents/Examples/3DBall/TFModels/</code>。</li>
+<li>打开 Unity Editor，然后选择 <code>3DBall</code> 场景（如上所述）。</li>
+<li>从 Scene 层级视图中选择 <code>Ball3DBrain</code> 对象。</li>
+<li>将 <code>Type of Brain</code> 更改为 <code>Internal</code>。</li>
+<li>将 <code>&lt;env_name&gt;.bytes</code> 文件从 Editor 的 Project 窗口拖入 
+<code>3DBallBrain</code> Inspector 窗口中的 <code>Graph Model</code> 占位区域。</li>
+<li>按 Editor 顶部的 Play 按钮。</li>
+</ol>
+<p>如果您正确执行了这些步骤，您现在应该能够
+看到 Unity 编辑器中有这个用于控制平衡球行为的
+训练模型。从这里开始，您便可以重新构建 Unity 的可执行文件，
+并单独运行该可执行文件，在其中内置 agent 新学到的行为。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/zh-CN/Getting-Started-with-Balance-Ball.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

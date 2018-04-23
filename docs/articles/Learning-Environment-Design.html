@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Reinforcement Learning in Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Reinforcement Learning in Unity ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="active">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Unity.html" title="Background Unity" class="">Background Unity</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-Machine-Learning.html" title="Background Machine Learning" class="">Background Machine Learning</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-TensorFlow.html" title="Background TensorFlow" class="">Background TensorFlow</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Jupyter.html" title="Background Jupyter Notebooks" class="">Background Jupyter Notebooks</a>
+                                </li>
+                                <li class="">
+                                  <a href="Using-Docker.html" title="Background Docker Setup" class="">Background Docker Setup</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Creating Learning Environments</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                          </li>
+                          <li class="active">
+                            <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="active">Designing a Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Best-Practices.html" title="Learning Environment Best Practices" class="">Learning Environment Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Monitor.html" title="Using the Monitor Class" class="">Using the Monitor Class</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-TensorFlow-Sharp-in-Unity.html" title="TensorFlowSharp in Unity" class="">TensorFlowSharp in Unity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Training</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Training-ML-Agents.html" title="Training ML-Agents" class="">Training ML-Agents</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-PPO.html" title="Training with Proximal Policy Optimization" class="">Training with Proximal Policy Optimization</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Curriculum-Learning.html" title="Training with Curriculum Learning" class="">Training with Curriculum Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Imitation-Learning.html" title="Training with Imitation Learning" class="">Training with Imitation Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Memory.html" title="Training with LSTM" class="">Training with LSTM</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-on-Amazon-Web-Service.html" title="Training on the Cloud with Amazon Web Services" class="">Training on the Cloud with Amazon Web Services</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-Tensorboard.html" title="Using TensorBoard to Observe Training" class="">Using TensorBoard to Observe Training</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Help</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Migrating-v0.3.html" title="Migrating to ML-Agents v.0.3" class="">Migrating to ML-Agents v.0.3</a>
+                          </li>
+                          <li class="">
+                            <a href="Glossary.html" title="ML-Agents Glossary" class="">ML-Agents Glossary</a>
+                          </li>
+                          <li class="">
+                            <a href="Limitations-and-Common-Issues.html" title="Limitations &amp; Common Issues" class="">Limitations &amp; Common Issues</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="reinforcement-learning-in-unity">Reinforcement Learning in Unity</h1>
+
+<p>Reinforcement learning is an artificial intelligence technique that trains <em>agents</em> to perform tasks by rewarding desirable behavior. During reinforcement learning, an agent explores its environment, observes the state of things, and, based on those observations, takes an action. If the action leads to a better state, the agent receives a positive reward. If it leads to a less desirable state, then the agent receives no reward or a negative reward (punishment). As the agent learns during training, it optimizes its decision making so that it receives the maximum reward over time.</p>
+<p>ML-Agents uses a reinforcement learning technique called <a href="https://blog.openai.com/openai-baselines-ppo/">Proximal Policy Optimization (PPO)</a>. PPO uses a neural network to approximate the ideal function that maps an agent&#39;s observations to the best action an agent can take in a given state. The ML-Agents PPO algorithm is implemented in TensorFlow and runs in a separate Python process (communicating with the running Unity application over a socket). </p>
+<p><strong>Note:</strong> if you aren&#39;t studying machine and reinforcement learning as a subject and just want to train agents to accomplish tasks, you can treat PPO training as a <em>black box</em>. There are a few training-related parameters to adjust inside Unity as well as on the Python training side, but you do not need in-depth knowledge of the algorithm itself to successfully create and train agents. Step-by-step procedures for running the training process are provided in the <a href="Training-ML-Agents.html">Training section</a>. </p>
+<h2 id="the-simulation-and-training-process">The Simulation and Training Process</h2>
+<p>Training and simulation proceed in steps orchestrated by the ML-Agents Academy class. The Academy works with Agent and Brain objects in the scene to step through the simulation. When either the Academy has reached its maximum number of steps or all agents in the scene are <em>done</em>, one training episode is finished. </p>
+<p>During training, the external Python training process communicates with the Academy to run a series of episodes while it collects data and optimizes its neural network model. The type of Brain assigned to an agent determines whether it participates in training or not. The <strong>External</strong> brain communicates with the external process to train the TensorFlow model. When training is completed successfully, you can add the trained model file to your Unity project for use with an <strong>Internal</strong> brain.</p>
+<p>The ML-Agents Academy class orchestrates the agent simulation loop as follows:</p>
+<ol>
+<li>Calls your Academy subclass&#39;s <code>AcademyReset()</code> function.</li>
+<li>Calls the <code>AgentReset()</code> function for each agent in the scene.</li>
+<li>Calls the  <code>CollectObservations()</code> function for each agent in the scene.</li>
+<li>Uses each agent&#39;s Brain class to decide on the agent&#39;s next action. </li>
+<li>Calls your subclass&#39;s <code>AcademyAct()</code> function.</li>
+<li>Calls the <code>AgentAction()</code> function for each agent in the scene, passing in the action chosen by the agent&#39;s brain. (This function is not called if the agent is done.)</li>
+<li>Calls the agent&#39;s <code>AgentOnDone()</code> function if the agent has reached its <code>Max Step</code> count or has otherwise marked itself as <code>done</code>. Optionally, you can set an agent to restart if it finishes before the end of an episode. In this case, the Academy calls the <code>AgentReset()</code> function.</li>
+<li>When the Academy reaches its own <code>Max Step</code> count, it starts the next episode again by calling your Academy subclass&#39;s <code>AcademyReset()</code> function.</li>
+</ol>
+<p>To create a training environment, extend the Academy and Agent classes to implement the above methods. The <code>Agent.CollectObservations()</code> and <code>Agent.AgentAction()</code> functions are required; the other methods are optional — whether you need to implement them or not depends on your specific scenario.</p>
+<p><strong>Note:</strong> The API used by the Python PPO training process to communicate with and control the Academy during training can be used for other purposes as well. For example, you could use the API to use Unity as the simulation engine for your own machine learning algorithms. See <a href="Python-API.md">Python API</a> for more information.</p>
+<h2 id="organizing-the-unity-scene">Organizing the Unity Scene</h2>
+<p>To train and use ML-Agents in a Unity scene, the scene must contain a single Academy subclass along with as many Brain objects and Agent subclasses as you need. Any Brain instances in the scene must be attached to GameObjects that are children of the Academy in the Unity Scene Hierarchy. Agent instances should be attached to the GameObject representing that agent.</p>
+<p><img src="../images/scene-hierarchy.png" alt="Scene Hierarchy"></p>
+<p>You must assign a brain to every agent, but you can share brains between multiple agents. Each agent will make its own observations and act independently, but will use the same decision-making logic and, for <strong>Internal</strong> brains, the same trained TensorFlow model. </p>
+<h3 id="academy">Academy</h3>
+<p>The Academy object orchestrates agents and their decision making processes. Only place a single Academy object in a scene. </p>
+<p>You must create a subclass of the Academy class (since the base class is abstract). When you create your Academy subclass, you can implement the following methods (all are optional):</p>
+<ul>
+<li><code>InitializeAcademy()</code> — Prepare the environment the first time it launches.</li>
+<li><code>AcademyReset()</code> — Prepare the environment and agents for the next training episode. Use this function to place and initialize entities in the scene as necessary.</li>
+<li><code>AcademyStep()</code> — Prepare the environment for the next simulation step. The base Academy class calls this function before calling any <code>AgentAction()</code> methods for the current step. You can use this function to update other objects in the scene before the agents take their actions. Note that the agents have already collected their observations and chosen an action before the Academy invokes this method.</li>
+</ul>
+<p>The base Academy classes also defines several important properties that you can set in the Unity Editor Inspector. For training, the most important of these properties is <code>Max Steps</code>, which determines how long each training episode lasts. Once the Academy&#39;s step counter reaches this value, it calls the <code>AcademyReset()</code> function to start the next episode. </p>
+<p>  See <a href="Learning-Environment-Design-Academy.html">Academy</a> for a complete list of the Academy properties and their uses.  </p>
+<h3 id="brain">Brain</h3>
+<p>The Brain encapsulates the decision making process. Brain objects must be children of the Academy in the Unity scene hierarchy. Every Agent must be assigned a Brain, but you can use the same Brain with more than one Agent. </p>
+<p>Use the Brain class directly, rather than a subclass. Brain behavior is determined by the brain type. During training, set your agent&#39;s brain type to <strong>External</strong>. To use the trained model, import the model file into the Unity project and change the brain type to <strong>Internal</strong>. See <a href="Learning-Environment-Design-Brains.html">Brains</a> for details on using the different types of brains. You can extend the CoreBrain class to create different brain types if the four built-in types don&#39;t do what you need.</p>
+<p>The Brain class has several important properties that you can set using the Inspector window. These properties must be appropriate for the agents using the brain. For example, the <code>Vector Observation Space Size</code> property must match the length of the feature vector created by an agent exactly. See <a href="Learning-Environment-Design-Agents.html">Agents</a> for information about creating agents and setting up a Brain instance correctly.</p>
+<p>See <a href="Learning-Environment-Design-Brains.html">Brains</a> for a complete list of the Brain properties.</p>
+<h3 id="agent">Agent</h3>
+<p>The Agent class represents an actor in the scene that collects observations and carries out actions. The Agent class is typically attached to the GameObject in the scene that otherwise represents the actor — for example, to a player object in a football game or a car object in a vehicle simulation. Every Agent must be assigned a Brain.  </p>
+<p>To create an agent, extend the Agent class and implement the essential <code>CollectObservations()</code> and <code>AgentAction()</code> methods:</p>
+<ul>
+<li><code>CollectObservations()</code> — Collects the agent&#39;s observation of its environment.</li>
+<li><code>AgentAction()</code> — Carries out the action chosen by the agent&#39;s brain and assigns a reward to the current state.</li>
+</ul>
+<p>Your implementations of these functions determine how the properties of the Brain assigned to this agent must be set.</p>
+<p>You must also determine how an Agent finishes its task or times out. You can manually set an agent to done in your <code>AgentAction()</code> function when the agent has finished (or irrevocably failed) its task. You can also set the agent&#39;s <code>Max Steps</code> property to a positive value and the agent will consider itself done after it has taken that many steps. When the Academy reaches its own <code>Max Steps</code> count, it starts the next episode. If you set an agent&#39;s <code>ResetOnDone</code> property to true, then the agent can attempt its task several times in one episode. (Use the <code>Agent.AgentReset()</code> function to prepare the agent to start again.) </p>
+<p>See <a href="Learning-Environment-Design-Agents.html">Agents</a> for detailed information about programing your own agents.</p>
+<h2 id="environments">Environments</h2>
+<p>An <em>environment</em> in ML-Agents can be any scene built in Unity. The Unity scene provides the environment in which agents observe, act, and learn. How you set up the Unity scene to serve as a learning environment really depends on your goal. You may be trying to solve a specific reinforcement learning problem of limited scope, in which case you can use the same scene for both training and for testing trained agents. Or, you may be training agents to operate in a complex game or simulation. In this case, it might be more efficient and practical to create a purpose-built training scene.</p>
+<p>Both training and testing (or normal game) scenes must contain an Academy object to control the agent decision making process. The Academy defines several properties that can be set differently for a training scene versus a regular scene. The Academy&#39;s <strong>Configuration</strong> properties control rendering and time scale. You can set the <strong>Training Configuration</strong> to minimize the time Unity spends rendering graphics in order to speed up training. You may need to adjust the other functional, Academy settings as well. For example, <code>Max Steps</code> should be as short as possible for training — just long enough for the agent to accomplish its task, with some extra time for &quot;wandering&quot; while it learns. In regular scenes, you often do not want the Academy to reset the scene at all; if so, <code>Max Steps</code> should be set to zero. </p>
+<p>When you create a training environment in Unity, you must set up the scene so that it can be controlled by the external training process. Considerations include:</p>
+<ul>
+<li>The training scene must start automatically when your Unity application is launched by the training process.</li>
+<li>The scene must include at least one <strong>External</strong> brain.</li>
+<li>The Academy must reset the scene to a valid starting point for each episode of training.</li>
+<li>A training episode must have a definite end — either using <code>Max Steps</code> or by each agent setting itself to <code>done</code>.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/articles/Learning-Environment-Design.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

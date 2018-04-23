@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#23433;&#35013;&#21644;&#35774;&#32622; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#23433;&#35013;&#21644;&#35774;&#32622; ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="active">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="active">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                    </li>
+                    <li class="active">
+                      <a href="Installation.html" title="Installation &amp; Setup" class="active">Installation &amp; Setup</a>
+                    </li>
+                    <li class="">
+                      <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="安装和设置">安装和设置</h1>
+
+<p>为了安装和使用 ML-Agents，您需要安装 Unity，克隆这个代码仓库，
+并安装 Python 以及其他所依赖的库。下面的每个小节
+都会概述每个步骤，此外还会介绍尚在测试阶段的 Docker 的配置方法。</p>
+<h2 id="安装-unity-20171-或更高版本">安装 <strong>Unity 2017.1</strong> 或更高版本</h2>
+<p><a href="https://store.unity.com/download">下载</a> 并安装 Unity。如果您想
+使用我们的 Docker 设置（稍后介绍），请确保在安装 Unity 时选择 
+<em>Linux Build Support</em> 组件。</p>
+<p align="center">
+    <img src="../images/unity_linux_build_support.png" alt="Linux Build Support" width="500" border="10">
+</p>
+
+<h2 id="克隆-ml-agents-代码仓库">克隆 ml-agents 代码仓库</h2>
+<p>安装完成后，您需要克隆 ML-Agents GitHub 代码仓库。</p>
+<pre><code>git clone git@github.com:Unity-Technologies/ml-agents.git
+</code></pre><p>此代码仓库中的 <code>unity-environment</code> 目录包含了要添加到项目中的 
+Unity Assets。<code>python</code> 目录包含训练代码。
+这两个目录都位于代码仓库的根目录。</p>
+<h2 id="安装-python以及依赖项">安装 Python（以及依赖项）</h2>
+<p>为了使用 ML-Agents，您需要安装 Python 3 以及
+<a href="../python/requirements.txt">要求文件</a>中列出的依赖项。
+一些主要的依赖项包括：</p>
+<ul>
+<li><a href="/docs/Background-TensorFlow.md">TensorFlow</a></li>
+<li><a href="/docs/Background-Jupyter.md">Jupyter</a></li>
+</ul>
+<h3 id="windows-用户">Windows 用户</h3>
+<p>如果您是刚接触 Python 和 TensorFlow 的 Windows 用户，请遵循<a href="/docs/Installation-Windows.md">此指南</a>来设置 Python 环境。</p>
+<h3 id="mac-和-unix-用户">Mac 和 Unix 用户</h3>
+<p>如果您的 Python 环境不包括 <code>pip</code>，请参阅这些
+<a href="https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers">说明</a>
+以了解其安装方法。</p>
+<p>要安装依赖项，请进入代码仓库的 <code>python</code> 子目录，
+然后从命令行中运行：</p>
+<pre><code>pip3 install .
+</code></pre><h2 id="基于-docker-的安装测试阶段">基于 Docker 的安装（测试阶段）</h2>
+<p>如果您想使用 Docker for ML-Agents，请按照
+<a href="/docs/Using-Docker.md">该指南</a>进行操作。</p>
+<h2 id="unity-包">Unity 包</h2>
+<p>您可以通过 Unity 包的形式下载 ML-Agents：</p>
+<ul>
+<li>带 TensorflowSharp 插件的 ML-Agents（<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/ML-AgentsWithPlugin.unitypackage">AWS S3链接</a>，<a href="https://pan.baidu.com/s/1qkWOqb0meyTorBG-So_PfA">百度盘链接</a>）</li>
+<li>不带 TensorflowSharp 插件的 ML-Agents（<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/ML-AgentsNoPlugin.unitypackage">AWS S3链接</a>，<a href="https://pan.baidu.com/s/1K8fZFslW6PWNgmWA6oO4Yg">百度盘链接</a>）</li>
+<li>仅包含 TensorflowSharp 插件（<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/TFSharpPlugin.unitypackage">AWS S3链接</a>，<a href="https://pan.baidu.com/s/1s0mJN8lvuxTcYbs2kL2FqA">百度盘链接</a>）</li>
+</ul>
+<h2 id="帮助">帮助</h2>
+<p>如果您在安装 ML-Agents 时遇到任何问题，请
+<a href="https://github.com/Unity-Technologies/ml-agents/issues">提交问题</a>，并在提交时
+提供有关操作系统、Python 版本和相关错误消息（如可能）的
+信息。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/zh-CN/Installation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Training with Proximal Policy Optimization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Training with Proximal Policy Optimization ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="active">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Unity.html" title="Background Unity" class="">Background Unity</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-Machine-Learning.html" title="Background Machine Learning" class="">Background Machine Learning</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-TensorFlow.html" title="Background TensorFlow" class="">Background TensorFlow</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Jupyter.html" title="Background Jupyter Notebooks" class="">Background Jupyter Notebooks</a>
+                                </li>
+                                <li class="">
+                                  <a href="Using-Docker.html" title="Background Docker Setup" class="">Background Docker Setup</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Creating Learning Environments</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Best-Practices.html" title="Learning Environment Best Practices" class="">Learning Environment Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Monitor.html" title="Using the Monitor Class" class="">Using the Monitor Class</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-TensorFlow-Sharp-in-Unity.html" title="TensorFlowSharp in Unity" class="">TensorFlowSharp in Unity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Training</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Training-ML-Agents.html" title="Training ML-Agents" class="">Training ML-Agents</a>
+                          </li>
+                          <li class="active">
+                            <a href="Training-PPO.html" title="Training with Proximal Policy Optimization" class="active">Training with Proximal Policy Optimization</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Curriculum-Learning.html" title="Training with Curriculum Learning" class="">Training with Curriculum Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Imitation-Learning.html" title="Training with Imitation Learning" class="">Training with Imitation Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Memory.html" title="Training with LSTM" class="">Training with LSTM</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-on-Amazon-Web-Service.html" title="Training on the Cloud with Amazon Web Services" class="">Training on the Cloud with Amazon Web Services</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-Tensorboard.html" title="Using TensorBoard to Observe Training" class="">Using TensorBoard to Observe Training</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Help</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Migrating-v0.3.html" title="Migrating to ML-Agents v.0.3" class="">Migrating to ML-Agents v.0.3</a>
+                          </li>
+                          <li class="">
+                            <a href="Glossary.html" title="ML-Agents Glossary" class="">ML-Agents Glossary</a>
+                          </li>
+                          <li class="">
+                            <a href="Limitations-and-Common-Issues.html" title="Limitations &amp; Common Issues" class="">Limitations &amp; Common Issues</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="training-with-proximal-policy-optimization">Training with Proximal Policy Optimization</h1>
+
+<p>ML-Agents uses a reinforcement learning technique called <a href="https://blog.openai.com/openai-baselines-ppo/">Proximal Policy Optimization (PPO)</a>. PPO uses a neural network to approximate the ideal function that maps an agent&#39;s observations to the best action an agent can take in a given state. The ML-Agents PPO algorithm is implemented in TensorFlow and runs in a separate Python process (communicating with the running Unity application over a socket). </p>
+<p>See <a href="Training-ML-Agents.html">Training ML-Agents</a> for instructions on running the training program, <code>learn.py</code>.</p>
+<p>If you are using the recurrent neural network (RNN) to utilize memory, see <a href="Feature-Memory.html">Using Recurrent Neural Networks</a> for RNN-specific training details.</p>
+<p>If you are using curriculum training to pace the difficulty of the learning task presented to an agent, see <a href="Training-Curriculum-Learning.html">Training with Curriculum Learning</a>.</p>
+<p>For information about imitation learning, which uses a different training algorithm, see <a href="Training-Imitation-Learning.html">Training with Imitation Learning</a>.</p>
+<h2 id="best-practices-when-training-with-ppo">Best Practices when training with PPO</h2>
+<p>Successfully training a Reinforcement Learning model often involves tuning the training hyperparameters. This guide contains some best practices for tuning the training process when the default parameters don&#39;t seem to be giving the level of performance you would like.</p>
+<h2 id="hyperparameters">Hyperparameters</h2>
+<h4 id="gamma">Gamma</h4>
+<p><code>gamma</code> corresponds to the discount factor for future rewards. This can be thought of as how far into the future the agent should care about possible rewards. In situations when the agent should be acting in the present in order to prepare for rewards in the distant future, this value should be large. In cases when rewards are more immediate, it can be smaller.</p>
+<p>Typical Range: <code>0.8</code> - <code>0.995</code></p>
+<h4 id="lambda">Lambda</h4>
+<p><code>lambd</code> corresponds to the <code>lambda</code> parameter used when calculating the Generalized Advantage Estimate (<a href="https://arxiv.org/abs/1506.02438">GAE</a>). This can be thought of as how much the agent relies on its current value estimate when calculating an updated value estimate. Low values correspond to relying more on the current value estimate (which can be high bias), and high values correspond to relying more on the actual rewards received in the environment (which can be high variance). The parameter provides a trade-off between the two, and the right value can lead to a more stable training process.</p>
+<p>Typical Range: <code>0.9</code> - <code>0.95</code></p>
+<h4 id="buffer-size">Buffer Size</h4>
+<p><code>buffer_size</code> corresponds to how many experiences (agent observations, actions and rewards obtained) should be collected before we do any 
+learning or updating of the model. <strong>This should be a multiple of <code>batch_size</code></strong>. Typically larger <code>buffer_size</code> correspond to more stable training updates.</p>
+<p>Typical Range: <code>2048</code> - <code>409600</code></p>
+<h4 id="batch-size">Batch Size</h4>
+<p><code>batch_size</code> is the number of experiences used for one iteration of a gradient descent update. <strong>This should always be a fraction of the 
+<code>buffer_size</code></strong>. If you are using a continuous action space, this value should be large (in the order of 1000s). If you are using a discrete action space, this value 
+should be smaller (in order of 10s). </p>
+<p>Typical Range (Continuous): <code>512</code> - <code>5120</code></p>
+<p>Typical Range (Discrete): <code>32</code> - <code>512</code></p>
+<h4 id="number-of-epochs">Number of Epochs</h4>
+<p><code>num_epoch</code> is the number of passes through the experience buffer during gradient descent. The larger the <code>batch_size</code>, the
+larger it is acceptable to make this. Decreasing this will ensure more stable updates, at the cost of slower learning.</p>
+<p>Typical Range: <code>3</code> - <code>10</code></p>
+<h4 id="learning-rate">Learning Rate</h4>
+<p><code>learning_rate</code> corresponds to the strength of each gradient descent update step. This should typically be decreased if
+training is unstable, and the reward does not consistently increase.</p>
+<p>Typical Range: <code>1e-5</code> - <code>1e-3</code></p>
+<h4 id="time-horizon">Time Horizon</h4>
+<p><code>time_horizon</code> corresponds to how many steps of experience to collect per-agent before adding it to the experience buffer.
+When this limit is reached before the end of an episode, a value estimate is used to predict the overall expected reward from the agent&#39;s current state.
+As such, this parameter trades off between a less biased, but higher variance estimate (long time horizon) and more biased, but less varied estimate (short time horizon).
+In cases where there are frequent rewards within an episode, or episodes are prohibitively large, a smaller number can be more ideal. 
+This number should be large enough to capture all the important behavior within a sequence of an agent&#39;s actions.</p>
+<p>Typical Range: <code>32</code> - <code>2048</code></p>
+<h4 id="max-steps">Max Steps</h4>
+<p><code>max_steps</code> corresponds to how many steps of the simulation (multiplied by frame-skip) are run during the training process. This value should be increased for more complex problems.</p>
+<p>Typical Range: <code>5e5</code> - <code>1e7</code></p>
+<h4 id="beta">Beta</h4>
+<p><code>beta</code> corresponds to the strength of the entropy regularization, which makes the policy &quot;more random.&quot; This ensures that agents properly explore the action space during training. Increasing this will ensure more random actions are taken. This should be adjusted such that the entropy (measurable from TensorBoard) slowly decreases alongside increases in reward. If entropy drops too quickly, increase <code>beta</code>. If entropy drops too slowly, decrease <code>beta</code>.</p>
+<p>Typical Range: <code>1e-4</code> - <code>1e-2</code></p>
+<h4 id="epsilon">Epsilon</h4>
+<p><code>epsilon</code> corresponds to the acceptable threshold of divergence between the old and new policies during gradient descent updating. Setting this value small will result in more stable updates, but will also slow the training process.</p>
+<p>Typical Range: <code>0.1</code> - <code>0.3</code></p>
+<h4 id="normalize">Normalize</h4>
+<p><code>normalize</code> corresponds to whether normalization is applied to the vector observation inputs. This normalization is based on the running average and variance of the vector observation.
+Normalization can be helpful in cases with complex continuous control problems, but may be harmful with simpler discrete control problems.</p>
+<h4 id="number-of-layers">Number of Layers</h4>
+<p><code>num_layers</code> corresponds to how many hidden layers are present after the observation input, or after the CNN encoding of the visual observation. For simple problems,
+fewer layers are likely to train faster and more efficiently. More layers may be necessary for more complex control problems.</p>
+<p>Typical range: <code>1</code> - <code>3</code></p>
+<h4 id="hidden-units">Hidden Units</h4>
+<p><code>hidden_units</code> correspond to how many units are in each fully connected layer of the neural network. For simple problems
+where the correct action is a straightforward combination of the observation inputs, this should be small. For problems where
+the action is a very complex interaction between the observation variables, this should be larger.</p>
+<p>Typical Range: <code>32</code> - <code>512</code></p>
+<h3 id="optional-recurrent-neural-network-hyperparameters">(Optional) Recurrent Neural Network Hyperparameters</h3>
+<p>The below hyperparameters are only used when <code>use_recurrent</code> is set to true.</p>
+<h4 id="sequence-length">Sequence Length</h4>
+<p><code>sequence_length</code> corresponds to the length of the sequences of experience passed through the network during training. This should be long enough to capture whatever information your agent might need to remember over time. For example, if your agent needs to remember the velocity of objects, then this can be a small value. If your agent needs to remember a piece of information given only once at the beginning of an episode, then this should be a larger value.</p>
+<p>Typical Range: <code>4</code> - <code>128</code></p>
+<h4 id="memory-size">Memory Size</h4>
+<p><code>memory_size</code> corresponds to the size of the array of floating point numbers used to store the hidden state of the recurrent neural network. This value must be a multiple of 4, and should scale with the amount of information you expect the agent will need to remember in order to successfully complete the task.</p>
+<p>Typical Range: <code>64</code> - <code>512</code></p>
+<h2 id="training-statistics">Training Statistics</h2>
+<p>To view training statistics, use TensorBoard. For information on launching and using TensorBoard, see <a href="Getting-Started-with-Balance-Ball.html#observing-training-progress">here</a>.</p>
+<h4 id="cumulative-reward">Cumulative Reward</h4>
+<p>The general trend in reward should consistently increase over time. Small ups and downs are to be expected. Depending on the complexity of the task, a significant increase in reward may not present itself until millions of steps into the training process.</p>
+<h4 id="entropy">Entropy</h4>
+<p>This corresponds to how random the decisions of a brain are. This should consistently decrease during training. If it decreases too soon or not at all, <code>beta</code> should be adjusted (when using discrete action space).</p>
+<h4 id="learning-rate-1">Learning Rate</h4>
+<p>This will decrease over time on a linear schedule.</p>
+<h4 id="policy-loss">Policy Loss</h4>
+<p>These values will oscillate with training.</p>
+<h4 id="value-estimate">Value Estimate</h4>
+<p>These values should increase with the reward. They corresponds to how much future reward the agent predicts itself receiving at any given point.</p>
+<h4 id="value-loss">Value Loss</h4>
+<p>These values will increase as the reward increases, and should decrease when reward becomes stable.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/articles/Training-PPO.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

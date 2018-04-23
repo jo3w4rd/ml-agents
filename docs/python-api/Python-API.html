@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Python API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Python API ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/index.md" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="active">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="active">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="UnityEnvironment.html" title="UnityEnvironment" class="">UnityEnvironment</a>
+                    </li>
+                    <li class="">
+                      <a href="BrainInfo.html" title="BrainInfo" class="">BrainInfo</a>
+                    </li>
+                    <li class="">
+                      <a href="BrainParameters.html" title="BrainParameters" class="">BrainParameters</a>
+                    </li>
+                    <li class="">
+                      <a href="Curriculum.html" title="Curriculum" class="">Curriculum</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnityException.html" title="UnityException" class="">UnityException</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnityEnvironmentException.html" title="UnityEnvironmentException" class="">UnityEnvironmentException</a>
+                          </li>
+                          <li class="">
+                            <a href="UnityActionException.html" title="UnityActionException" class="">UnityActionException</a>
+                          </li>
+                          <li class="">
+                            <a href="UnityTimeOutException.html" title="UnityTimeOutException" class="">UnityTimeOutException</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="python-api">Python API</h1>
+
+<p>ML-Agents provides a Python API for controlling the agent simulation loop of a environment or game built with Unity. This API is used by the ML-Agent training algorithms (run with <code>learn.py</code>), but you can also write your Python programs using this API. </p>
+<p>The key objects in the Python API include:</p>
+<ul>
+<li><strong>UnityEnvironment</strong> — the main interface between the Unity application and your code. Use UnityEnvironment to start and control a simulation or training session.</li>
+<li><strong>BrainInfo</strong> — contains all the data from agents in the simulation, such as observations and rewards.</li>
+<li><strong>BrainParameters</strong> — describes the data elements in a BrainInfo object. For example, provides the array length of an observation in BrainInfo.</li>
+</ul>
+<p>These classes are all defined in the <code>python/unityagents</code> folder of the ML-Agents SDK.</p>
+<p>To communicate with an agent in a Unity environment from a Python program, the agent must either use an <strong>External</strong> brain or use a brain that is broadcasting (has its <strong>Broadcast</strong> property set to true). Your code is expected to return actions for agents with external brains, but can only observe broadcasting brains (the information you receive for an agent is the same in both cases). See <a href="Learning-Environment-Design-Brains.md#using-the-broadcast-feature">Using the Broadcast Feature</a>.</p>
+<p>For a simple example of using the Python API to interact with a Unity environment, see the Basic <a href="Background-Jupyter.md">Jupyter</a> notebook, which opens an environment, runs a few simulation steps taking random actions, and closes the environment. </p>
+<p><em>Notice: Currently communication between Unity and Python takes place over an open socket without authentication. As such, please make sure that the network where training takes place is secure. This will be addressed in a future release.</em></p>
+<h2 id="loading-a-unity-environment">Loading a Unity Environment</h2>
+<p>Python-side communication happens through <code>UnityEnvironment</code> which is located in <code>python/unityagents</code>. To load a Unity environment from a built binary file, put the file in the same directory as <code>unityagents</code>. For example, if the filename of your Unity environment is 3DBall.app, in python, run:</p>
+<pre><code class="lang-python">from unityagents import UnityEnvironment
+env = UnityEnvironment(file_name=&quot;3DBall&quot;, worker_id=0, seed=1)
+</code></pre><ul>
+<li><code>file_name</code> is the name of the environment binary (located in the root directory of the python project).</li>
+<li><code>worker_id</code> indicates which port to use for communication with the environment. For use in parallel training regimes such as A3C.</li>
+<li><code>seed</code> indicates the seed to use when generating random numbers during the training process. In environments which do not involve physics calculations, setting the seed enables reproducible experimentation by ensuring that the environment and trainers utilize the same random seed.</li>
+</ul>
+<h2 id="interacting-with-a-unity-environment">Interacting with a Unity Environment</h2>
+<p>A BrainInfo object contains the following fields:</p>
+<ul>
+<li><strong><code>visual_observations</code></strong> : A list of 4 dimensional numpy arrays. Matrix n of the list corresponds to the n<sup>th</sup> observation of the brain. </li>
+<li><strong><code>vector_observations</code></strong> : A two dimensional numpy array of dimension <code>(batch size, vector observation size)</code> if the vector observation space is continuous and <code>(batch size, 1)</code> if the vector observation space is discrete.</li>
+<li><strong><code>text_observations</code></strong> : A list of string corresponding to the agents text observations.</li>
+<li><strong><code>memories</code></strong> : A two dimensional numpy array of dimension <code>(batch size, memory size)</code> which corresponds to the memories sent at the previous step.</li>
+<li><strong><code>rewards</code></strong> : A list as long as the number of agents using the brain containing the rewards they each obtained at the previous step. </li>
+<li><strong><code>local_done</code></strong> : A list as long as the number of agents using the brain containing  <code>done</code> flags (whether or not the agent is done). </li>
+<li><strong><code>max_reached</code></strong> : A list as long as the number of agents using the brain containing true if the agents reached their max steps.</li>
+<li><strong><code>agents</code></strong> : A list of the unique ids of the agents using the brain.</li>
+<li><strong><code>previous_actions</code></strong> : A two dimensional numpy array of dimension <code>(batch size, vector action size)</code> if the vector action space is continuous and <code>(batch size, 1)</code> if the vector action space is discrete.</li>
+</ul>
+<p>Once loaded, you can use your UnityEnvironment object, which referenced by a variable named <code>env</code> in this example, can be used in the following way:  </p>
+<ul>
+<li><strong>Print : <code>print(str(env))</code></strong><br>Prints all parameters relevant to the loaded environment and the external brains.  </li>
+<li><strong>Reset : <code>env.reset(train_model=True, config=None)</code></strong><br>Send a reset signal to the environment, and provides a dictionary mapping brain names to BrainInfo objects.  <ul>
+<li><code>train_model</code> indicates whether to run the environment in train (<code>True</code>) or test (<code>False</code>) mode.</li>
+<li><code>config</code> is an optional dictionary of configuration flags specific to the environment. For generic environments, <code>config</code> can be ignored. <code>config</code> is a dictionary of strings to floats where the keys are the names of the <code>resetParameters</code> and the values are their corresponding float values. Define the reset parameters on the <a href="Learning-Environment-Design-Academy.md#academy-properties">Academy Inspector</a> window in the Unity Editor.</li>
+</ul>
+</li>
+<li><strong>Step : <code>env.step(action, memory=None, text_action=None)</code></strong><br>Sends a step signal to the environment using the actions. For each brain : <ul>
+<li><code>action</code> can be one dimensional arrays or two dimensional arrays if you have multiple agents per brains.</li>
+<li><code>memory</code> is an optional input that can be used to send a list of floats per agents to be retrieved at the next step.</li>
+<li><code>text_action</code> is an optional input that be used to send a single string per agent.</li>
+</ul>
+</li>
+</ul>
+<p>Note that if you have more than one external brain in the environment, you must provide dictionaries from brain names to arrays for <code>action</code>, <code>memory</code> and <code>value</code>. For example: If you have two external brains named <code>brain1</code> and <code>brain2</code> each with one agent taking two continuous actions, then you can have:</p>
+<pre><code class="lang-python">action = {&#39;brain1&#39;:[1.0, 2.0], &#39;brain2&#39;:[3.0,4.0]}
+</code></pre><p>Returns a dictionary mapping brain names to BrainInfo objects.  </p>
+<ul>
+<li><strong>Close : <code>env.close()</code></strong><br>Sends a shutdown signal to the environment and closes the communication socket.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/python-api/Python-API.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

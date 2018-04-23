@@ -1,0 +1,555 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started with the 3D Balance Ball Environment </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started with the 3D Balance Ball Environment ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="active">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Unity.html" title="Background Unity" class="">Background Unity</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-Machine-Learning.html" title="Background Machine Learning" class="">Background Machine Learning</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-TensorFlow.html" title="Background TensorFlow" class="">Background TensorFlow</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Jupyter.html" title="Background Jupyter Notebooks" class="">Background Jupyter Notebooks</a>
+                                </li>
+                                <li class="">
+                                  <a href="Using-Docker.html" title="Background Docker Setup" class="">Background Docker Setup</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="active">
+                            <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="active">Getting Started with the 3D Balance Ball Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Creating Learning Environments</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Best-Practices.html" title="Learning Environment Best Practices" class="">Learning Environment Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Monitor.html" title="Using the Monitor Class" class="">Using the Monitor Class</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-TensorFlow-Sharp-in-Unity.html" title="TensorFlowSharp in Unity" class="">TensorFlowSharp in Unity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Training</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Training-ML-Agents.html" title="Training ML-Agents" class="">Training ML-Agents</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-PPO.html" title="Training with Proximal Policy Optimization" class="">Training with Proximal Policy Optimization</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Curriculum-Learning.html" title="Training with Curriculum Learning" class="">Training with Curriculum Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Imitation-Learning.html" title="Training with Imitation Learning" class="">Training with Imitation Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Memory.html" title="Training with LSTM" class="">Training with LSTM</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-on-Amazon-Web-Service.html" title="Training on the Cloud with Amazon Web Services" class="">Training on the Cloud with Amazon Web Services</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-Tensorboard.html" title="Using TensorBoard to Observe Training" class="">Using TensorBoard to Observe Training</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Help</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Migrating-v0.3.html" title="Migrating to ML-Agents v.0.3" class="">Migrating to ML-Agents v.0.3</a>
+                          </li>
+                          <li class="">
+                            <a href="Glossary.html" title="ML-Agents Glossary" class="">ML-Agents Glossary</a>
+                          </li>
+                          <li class="">
+                            <a href="Limitations-and-Common-Issues.html" title="Limitations &amp; Common Issues" class="">Limitations &amp; Common Issues</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started-with-the-3d-balance-ball-environment">Getting Started with the 3D Balance Ball Environment</h1>
+
+<p>This tutorial walks through the end-to-end process of opening an ML-Agents 
+example environment in Unity, building the Unity executable, training an agent 
+in it, and finally embedding the trained model into the Unity environment. </p>
+<p>ML-Agents includes a number of <a href="Learning-Environment-Examples.html">example environments</a> 
+which you can examine to help understand the different ways in which ML-Agents 
+can be used. These environments can also serve as templates for new 
+environments or as ways to test new ML algorithms. After reading this tutorial, 
+you should be able to explore and build the example environments.</p>
+<p><img src="../images/balance.png" alt="3D Balance Ball"></p>
+<p>This walk-through uses the <strong>3D Balance Ball</strong> environment. 3D Balance Ball contains 
+a number of platforms and balls (which are all copies of each other). 
+Each platform tries to keep its ball from falling by rotating either 
+horizontally or vertically. In this environment, a platform is an <strong>agent</strong> 
+that receives a reward for every step that it balances the ball. An agent is 
+also penalized with a negative reward for dropping the ball. The goal of the 
+training process is to have the platforms learn to never drop the ball.</p>
+<p>Let&#39;s get started!</p>
+<h2 id="installation">Installation</h2>
+<p>In order to install and set up ML-Agents, the Python dependencies and Unity, 
+see the <a href="Installation.html">installation instructions</a>.</p>
+<h2 id="understanding-a-unity-environment-3d-balance-ball">Understanding a Unity Environment (3D Balance Ball)</h2>
+<p>An agent is an autonomous actor that observes and interacts with an 
+<em>environment</em>. In the context of Unity, an environment is a scene containing 
+an Academy and one or more Brain and Agent objects, and, of course, the other 
+entities that an agent interacts with.  </p>
+<p><img src="../images/mlagents-3DBallHierarchy.png" alt="Unity Editor"></p>
+<p><strong>Note:</strong> In Unity, the base object of everything in a scene is the 
+<em>GameObject</em>. The GameObject is essentially a container for everything else, 
+including behaviors, graphics, physics, etc. To see the components that make 
+up a GameObject, select the GameObject in the Scene window, and open the 
+Inspector window. The Inspector shows every component on a GameObject. </p>
+<p>The first thing you may notice after opening the 3D Balance Ball scene is that 
+it contains not one, but several platforms.  Each platform in the scene is an 
+independent agent, but they all share the same brain. 3D Balance Ball does this 
+to speed up training since all twelve agents contribute to training in parallel.</p>
+<h3 id="academy">Academy</h3>
+<p>The Academy object for the scene is placed on the Ball3DAcademy GameObject. 
+When you look at an Academy component in the inspector, you can see several 
+properties that control how the environment works. For example, the 
+<strong>Training</strong> and <strong>Inference Configuration</strong>  properties set the graphics and 
+timescale properties for the Unity application. The Academy uses the 
+<strong>Training Configuration</strong>  during training and the <strong>Inference Configuration</strong> 
+when not training. (<em>Inference</em> means that the agent is using a trained model 
+or heuristics or direct control — in other words, whenever <strong>not</strong> training.) 
+Typically, you set low graphics quality and a high time scale for the 
+<strong>Training configuration</strong> and a high graphics quality and the timescale to 
+<code>1.0</code> for the <strong>Inference Configuration</strong> .</p>
+<p><strong>Note:</strong> if you want to observe the environment during training, you can 
+adjust the <strong>Inference Configuration</strong> settings to use a larger window and a 
+timescale closer to 1:1. Be sure to set these parameters back when training in 
+earnest; otherwise, training can take a very long time.</p>
+<p>Another aspect of an environment to look at is the Academy implementation. 
+Since the base Academy class is abstract, you must always define a subclass. 
+There are three functions you can implement, though they are all optional:</p>
+<ul>
+<li>Academy.InitializeAcademy() — Called once when the environment is launched.</li>
+<li>Academy.AcademyStep() — Called at every simulation step before 
+Agent.AgentAction() (and after the agents collect their observations).</li>
+<li>Academy.AcademyReset() — Called when the Academy starts or restarts the 
+simulation (including the first time).</li>
+</ul>
+<p>The 3D Balance Ball environment does not use these functions — each agent 
+resets itself when needed — but many environments do use these functions to 
+control the environment around the agents.</p>
+<h3 id="brain">Brain</h3>
+<p>The Ball3DBrain GameObject in the scene, which contains a Brain component, 
+is a child of the Academy object. (All Brain objects in a scene must be 
+children of the Academy.) All the agents in the 3D Balance Ball environment 
+use the same Brain instance. 
+A Brain doesn&#39;t store any information about an agent, 
+it just routes the agent&#39;s collected observations to the decision making 
+process and returns the chosen action to the agent. Thus, all agents can share 
+the same brain, but act independently. The Brain settings tell you quite a bit 
+about how an agent works.</p>
+<p>The <strong>Brain Type</strong> determines how an agent makes its decisions. The 
+<strong>External</strong> and <strong>Internal</strong> types work together — use <strong>External</strong> when 
+training your agents; use <strong>Internal</strong> when using the trained model. 
+The <strong>Heuristic</strong> brain allows you to hand-code the agent&#39;s logic by extending 
+the Decision class. Finally, the <strong>Player</strong> brain lets you map keyboard 
+commands to actions, which can be useful when testing your agents and 
+environment. If none of these types of brains do what you need, you can 
+implement your own CoreBrain to create your own type.</p>
+<p>In this tutorial, you will set the <strong>Brain Type</strong> to <strong>External</strong> for training; 
+when you embed the trained model in the Unity application, you will change the
+<strong>Brain Type</strong> to <strong>Internal</strong>.</p>
+<p><strong>Vector Observation Space</strong></p>
+<p>Before making a decision, an agent collects its observation about its state 
+in the world. ML-Agents classifies vector observations into two types:
+<strong>Continuous</strong> and <strong>Discrete</strong>. The <strong>Continuous</strong> vector observation space 
+collects observations in a vector of floating point numbers. The <strong>Discrete</strong> 
+vector observation space is an index into a table of states. Most of the example
+environments use a continuous vector observation space. </p>
+<p>The Brain instance used in the 3D Balance Ball example uses the <strong>Continuous</strong> 
+vector observation space with a <strong>State Size</strong> of 8. This means that the 
+feature vector containing the agent&#39;s observations contains eight elements: 
+the <code>x</code> and <code>z</code> components of the platform&#39;s rotation and the <code>x</code>, <code>y</code>, and <code>z</code>
+components of the ball&#39;s relative position and velocity. (The observation
+values are defined in the agent&#39;s <code>CollectObservations()</code> function.)</p>
+<p><strong>Vector Action Space</strong></p>
+<p>An agent is given instructions from the brain in the form of <em>actions</em>. Like 
+states, ML-Agents classifies actions into two types: the <strong>Continuous</strong> 
+vector action space is a vector of numbers that can vary continuously. What 
+each element of the vector means is defined by the agent logic (the PPO
+training process just learns what values are better given particular state 
+observations based on the rewards received when it tries different values). 
+For example, an element might represent a force or torque applied to a 
+<code>RigidBody</code> in the agent. The <strong>Discrete</strong> action vector space defines its
+actions as a table. A specific action given to the agent is an index into 
+this table. </p>
+<p>The 3D Balance Ball example is programmed to use both types of vector action
+space. 
+You can try training with both settings to observe whether there is a 
+difference. (Set the <code>Vector Action Space Size</code> to 4 when using the discrete 
+action space and 2 when using continuous.)</p>
+<h3 id="agent">Agent</h3>
+<p>The Agent is the actor that observes and takes actions in the environment. 
+In the 3D Balance Ball environment, the Agent components are placed on the 
+twelve Platform GameObjects. The base Agent object has a few properties that 
+affect its behavior:</p>
+<ul>
+<li><strong>Brain</strong> — Every agent must have a Brain. The brain determines how an agent 
+makes decisions. All the agents in the 3D Balance Ball scene share the same 
+brain.</li>
+<li><strong>Visual Observations</strong> — Defines any Camera objects used by the agent to
+observe its environment. 3D Balance Ball does not use camera observations.</li>
+<li><strong>Max Step</strong> — Defines how many simulation steps can occur before the agent 
+decides it is done. In 3D Balance Ball, an agent restarts after 5000 steps.</li>
+<li><strong>Reset On Done</strong> — Defines whether an agent starts over when it is finished.
+3D Balance Ball sets this true so that the agent restarts after reaching the 
+<strong>Max Step</strong> count or after dropping the ball.</li>
+</ul>
+<p>Perhaps the more interesting aspect of an agent is the Agent subclass 
+implementation. When you create an agent, you must extend the base Agent class. 
+The Ball3DAgent subclass defines the following methods:</p>
+<ul>
+<li>Agent.AgentReset() — Called when the Agent resets, including at the beginning 
+of a session. The Ball3DAgent class uses the reset function to reset the 
+platform and ball. The function randomizes the reset values so that the 
+training generalizes to more than a specific starting position and platform 
+attitude.</li>
+<li>Agent.CollectObservations() — Called every simulation step. Responsible for 
+collecting the agent&#39;s observations of the environment. Since the Brain 
+instance assigned to the agent is set to the continuous vector observation
+space with a state size of 8, the <code>CollectObservations()</code> must call 
+<code>AddVectorObs</code> 8 times.</li>
+<li>Agent.AgentAction() — Called every simulation step. Receives the action chosen
+by the brain. The Ball3DAgent example handles both the continuous and the 
+discrete action space types. There isn&#39;t actually much difference between the 
+two state types in this environment — both vector action spaces result in a
+small change in platform rotation at each step. The <code>AgentAction()</code> function
+assigns a reward to the agent; in this example, an agent receives a small 
+positive reward for each step it keeps the ball on the platform and a larger, 
+negative reward for dropping the ball. An agent is also marked as done when it
+drops the ball so that it will reset with a new ball for the next simulation
+step.</li>
+</ul>
+<h2 id="building-the-environment">Building the Environment</h2>
+<p>The first step is to open the Unity scene containing the 3D Balance Ball
+environment:</p>
+<ol>
+<li>Launch Unity.</li>
+<li>On the Projects dialog, choose the <strong>Open</strong> option at the top of the window.</li>
+<li>Using the file dialog that opens, locate the <code>unity-environment</code> folder 
+within the ML-Agents project and click <strong>Open</strong>.</li>
+<li>In the <code>Project</code> window, navigate to the folder 
+<code>Assets/ML-Agents/Examples/3DBall/</code>.</li>
+<li>Double-click the <code>Scene</code> file to load the scene containing the Balance 
+Ball environment.</li>
+</ol>
+<p><img src="../images/mlagents-Open3DBall.png" alt="3DBall Scene"></p>
+<p>Since we are going to build this environment to conduct training, we need to 
+set the brain used by the agents to <strong>External</strong>. This allows the agents to 
+communicate with the external training process when making their decisions.</p>
+<ol>
+<li>In the <strong>Scene</strong> window, click the triangle icon next to the Ball3DAcademy 
+object.</li>
+<li>Select its child object <code>Ball3DBrain</code>.</li>
+<li>In the Inspector window, set <strong>Brain Type</strong> to <code>External</code>.</li>
+</ol>
+<p><img src="../images/mlagents-SetExternalBrain.png" alt="Set Brain to External"></p>
+<p>Next, we want the set up scene to play correctly when the training process 
+launches our environment executable. This means:</p>
+<ul>
+<li>The environment application runs in the background</li>
+<li>No dialogs require interaction</li>
+<li>The correct scene loads automatically</li>
+</ul>
+<ol>
+<li>Open Player Settings (menu: <strong>Edit</strong> &gt; <strong>Project Settings</strong> &gt; <strong>Player</strong>).</li>
+<li>Under <strong>Resolution and Presentation</strong>:<ul>
+<li>Ensure that <strong>Run in Background</strong> is Checked.</li>
+<li>Ensure that <strong>Display Resolution Dialog</strong> is set to Disabled.</li>
+</ul>
+</li>
+<li>Open the Build Settings window (menu:<strong>File</strong> &gt; <strong>Build Settings</strong>).</li>
+<li>Choose your target platform.<ul>
+<li>(optional) Select “Development Build” to
+<a href="https://docs.unity3d.com/Manual/LogFiles.html">log debug messages</a>.</li>
+</ul>
+</li>
+<li>If any scenes are shown in the <strong>Scenes in Build</strong> list, make sure that 
+the 3DBall Scene is the only one checked. (If the list is empty, than only the 
+current scene is included in the build).</li>
+<li>Click <em>Build</em>:
+ a. In the File dialog, navigate to the <code>python</code> folder in your ML-Agents 
+ directory.
+ b. Assign a file name and click <strong>Save</strong>.</li>
+</ol>
+<p><img src="../images/mlagents-BuildWindow.png" alt="Build Window"></p>
+<h2 id="training-the-brain-with-reinforcement-learning">Training the Brain with Reinforcement Learning</h2>
+<p>Now that we have a Unity executable containing the simulation environment, we 
+can perform the training. To first ensure that your environment and the Python 
+API work as expected, you can use the <code>python/Basics</code> 
+<a href="Background-Jupyter.html">Jupyter notebook</a>. 
+This notebook contains a simple walkthrough of the functionality of the API. 
+Within <code>Basics</code>, be sure to set <code>env_name</code> to the name of the environment file 
+you built earlier.</p>
+<h3 id="training-with-ppo">Training with PPO</h3>
+<p>In order to train an agent to correctly balance the ball, we will use a 
+Reinforcement Learning algorithm called Proximal Policy Optimization (PPO). 
+This is a method that has been shown to be safe, efficient, and more general 
+purpose than many other RL algorithms, as such we have chosen it as the 
+example algorithm for use with ML-Agents. For more information on PPO, 
+OpenAI has a recent <a href="https://blog.openai.com/openai-baselines-ppo/">blog post</a> 
+explaining it.</p>
+<p>To train the agents within the Ball Balance environment, we will be using the python 
+package. We have provided a convenient Python wrapper script called <code>learn.py</code> which accepts arguments used to configure both training and inference phases.</p>
+<p>We will pass to this script the path of the environment executable that we just built. (Optionally) We can
+use <code>run_id</code> to identify the experiment and create a folder where the model and summary statistics are stored. When 
+using TensorBoard to observe the training statistics, it helps to set this to a sequential value 
+for each training run. In other words, &quot;BalanceBall1&quot; for the first run, 
+&quot;BalanceBall2&quot; or the second, and so on. If you don&#39;t, the summaries for 
+every training run are saved to the same directory and will all be included 
+on the same graph.</p>
+<p>To summarize, go to your command line, enter the <code>ml-agents</code> directory and type: </p>
+<pre><code class="lang-python">python3 python/learn.py &lt;env_file_path&gt; --run-id=&lt;run-identifier&gt; --train 
+</code></pre><p><strong>Note</strong>: If you&#39;re using Anaconda, don&#39;t forget to activate the ml-agents environment first.</p>
+<p>The <code>--train</code> flag tells ML-Agents to run in training mode. <code>env_file_path</code> should be the path to the Unity executable that was just created. </p>
+<h3 id="observing-training-progress">Observing Training Progress</h3>
+<p>Once you start training using <code>learn.py</code> in the way described in the previous section, the <code>ml-agents</code> folder will 
+contain a <code>summaries</code> directory. In order to observe the training process 
+in more detail, you can use TensorBoard. From the command line run:</p>
+<p><code>tensorboard --logdir=summaries</code></p>
+<p>Then navigate to <code>localhost:6006</code>.</p>
+<p>From TensorBoard, you will see the summary statistics:</p>
+<ul>
+<li>Lesson - only interesting when performing
+<a href="Training-Curriculum-Learning.html">curriculum training</a>. 
+This is not used in the 3D Balance Ball environment. </li>
+<li>Cumulative Reward - The mean cumulative episode reward over all agents. 
+Should increase during a successful training session.</li>
+<li>Entropy - How random the decisions of the model are. Should slowly decrease 
+during a successful training process. If it decreases too quickly, the <code>beta</code> 
+hyperparameter should be increased.</li>
+<li>Episode Length - The mean length of each episode in the environment for all 
+agents.</li>
+<li>Learning Rate - How large a step the training algorithm takes as it searches 
+for the optimal policy. Should decrease over time.</li>
+<li>Policy Loss - The mean loss of the policy function update. Correlates to how
+much the policy (process for deciding actions) is changing. The magnitude of 
+this should decrease during a successful training session.</li>
+<li>Value Estimate - The mean value estimate for all states visited by the agent. 
+Should increase during a successful training session.</li>
+<li>Value Loss - The mean loss of the value function update. Correlates to how
+well the model is able to predict the value of each state. This should decrease
+during a successful training session.</li>
+</ul>
+<p><img src="../images/mlagents-TensorBoard.png" alt="Example TensorBoard Run"></p>
+<h2 id="embedding-the-trained-brain-into-the-unity-environment-experimental">Embedding the Trained Brain into the Unity Environment (Experimental)</h2>
+<p>Once the training process completes, and the training process saves the model 
+(denoted by the <code>Saved Model</code> message) you can add it to the Unity project and 
+use it with agents having an <strong>Internal</strong> brain type.
+<strong>Note:</strong> Do not just close the Unity Window once the <code>Saved Model</code> message appears. Either wait for the training process to close the window or press Ctrl+C at the command-line prompt. If you simply close the window manually, the .bytes file containing the trained model is not exported into the ml-agents folder.</p>
+<h3 id="setting-up-tensorflowsharp-support">Setting up TensorFlowSharp Support</h3>
+<p>Because TensorFlowSharp support is still experimental, it is disabled by 
+default. In order to enable it, you must follow these steps. Please note that 
+the <code>Internal</code> Brain mode will only be available once completing these steps.</p>
+<ol>
+<li>Make sure the TensorFlowSharp plugin is in your <code>Assets</code> folder. A Plugins 
+folder which includes TF# can be downloaded 
+<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/TFSharpPlugin.unitypackage">here</a>. 
+Double click and import it once downloaded.  You can see if this was
+successfully installed by checking the TensorFlow files in the Project tab
+under <code>Assets</code> -&gt; <code>ML-Agents</code> -&gt; <code>Plugins</code> -&gt; <code>Computer</code></li>
+<li>Go to <code>Edit</code> -&gt; <code>Project Settings</code> -&gt; <code>Player</code></li>
+<li>For each of the platforms you target 
+(<strong><code>PC, Mac and Linux Standalone</code></strong>, <strong><code>iOS</code></strong> or <strong><code>Android</code></strong>):<ol>
+<li>Go into <code>Other Settings</code>.</li>
+<li>Select <code>Scripting Runtime Version</code> to 
+<code>Experimental (.NET 4.6 Equivalent)</code></li>
+<li>In <code>Scripting Defined Symbols</code>, add the flag <code>ENABLE_TENSORFLOW</code>. 
+After typing in, press Enter.</li>
+</ol>
+</li>
+<li>Go to <code>File</code> -&gt; <code>Save Project</code></li>
+<li>Restart the Unity Editor.</li>
+</ol>
+<h3 id="embedding-the-trained-model-into-unity">Embedding the trained model into Unity</h3>
+<ol>
+<li>The trained model is stored in <code>models/&lt;run-identifier&gt;</code> in the <code>ml-agents</code> folder. Once the 
+training is complete, there will be a <code>&lt;env_name&gt;.bytes</code> file in that location where <code>&lt;env_name&gt;</code> is the name 
+of the executable used during training. <ol>
+<li>Move <code>&lt;env_name&gt;.bytes</code> from <code>python/models/ppo/</code> into 
+<code>unity-environment/Assets/ML-Agents/Examples/3DBall/TFModels/</code>.</li>
+</ol>
+</li>
+<li>Open the Unity Editor, and select the <code>3DBall</code> scene as described above.</li>
+<li>Select the <code>Ball3DBrain</code> object from the Scene hierarchy.</li>
+<li>Change the <code>Type of Brain</code> to <code>Internal</code>.</li>
+<li>Drag the <code>&lt;env_name&gt;.bytes</code> file from the Project window of the Editor
+to the <code>Graph Model</code> placeholder in the <code>3DBallBrain</code> inspector window.</li>
+<li>Press the Play button at the top of the editor.</li>
+</ol>
+<p>If you followed these steps correctly, you should now see the trained model 
+being used to control the behavior of the balance ball within the Editor 
+itself. From here you can re-build the Unity binary, and run it standalone 
+with your agent&#39;s new learned behavior built right in.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/articles/Getting-Started-with-Balance-Ball.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

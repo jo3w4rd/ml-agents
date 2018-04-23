@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#23398;&#20064;&#29615;&#22659;&#31034;&#20363; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#23398;&#20064;&#29615;&#22659;&#31034;&#20363; ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="active">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="active">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                    </li>
+                    <li class="">
+                      <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                    </li>
+                    <li class="active">
+                      <a href="Learning-Environment-Examples.html" title="Example Environment" class="active">Example Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="学习环境示例">学习环境示例</h1>
+
+<p>Unity ML-Agents 中内置了一些搭建好的学习环境的示例，并且我们还在不断增加新的示例，这些示例演示了该平台的各种功能。示例环境位于 
+<code>unity-environment/Assets/ML-Agents/Examples</code> 中，并且我们在下文中进行了简单的介绍。
+此外，我们的
+<a href="https://connect.unity.com/challenges/ml-agents-1">首届 ML-Agents 挑战赛</a>
+中包含了由社区成员创建的一些环境示例。</p>
+<p>此页仅概述了我们提供的示例环境。如果想要更多地学习如何设计和构建您自己的环境，请参阅
+<a href="Learning-Environment-Create-New.html">创建新的学习环境</a>
+页面。</p>
+<p>如果您想提交自己的环境，请参阅我们的
+<a href="/CONTRIBUTING.md">贡献指南</a>页面。</p>
+<h2 id="basic">Basic</h2>
+<p><img src="../images/basic.png" alt="Basic"></p>
+<ul>
+<li>训练环境：一种线性移动任务，在此任务中 agent 必须向左或向右移动到奖励状态。</li>
+<li>目标：移动到最高奖励状态。</li>
+<li>Agent设置：环境包含一个 agent，上面附带了单个 brain。</li>
+<li>Agent 奖励函数设置：<ul>
+<li>达到次优状态时 +0.1。</li>
+<li>达到最优状态时 +1.0。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（离散变量）一个变量，对应于当前状态。</li>
+<li>向量运动空间：（离散变量）两个可能的动作（向左移动、向右移动）。</li>
+<li>视觉观测：0</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="3dball-3d-balance-ball">3DBall: 3D Balance Ball</h2>
+<p><img src="../images/balance.png" alt="3D Balance Ball"></p>
+<ul>
+<li>训练环境：一种平衡球任务，在此任务中 agent 需要控制平台。</li>
+<li>目标：agent 必须平衡平台，以尽可能长时间在平台上保持球不掉落。</li>
+<li>Agent设置：环境包含 12 个全部链接到单个 brain 的同类 agent。</li>
+<li>Agent 奖励函数设置：<ul>
+<li>球在平台上保持不掉下的每一步都 +0.1。</li>
+<li>球掉下平台时 -1.0。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）8 个，对应于平台的旋转以及球的位置、旋转和速度。</li>
+<li>向量观测空间（困难版本，因为观测到的信息减少了）：（连续变量）5 个变量，对应于平台的旋转以及球的位置和旋转。</li>
+<li>向量运动空间：（连续变量）2 个，其中一个值对应于 X 旋转，而另一个值对应于 Z 旋转。</li>
+<li>视觉观测：0</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="gridworld">GridWorld</h2>
+<p><img src="../images/gridworld.png" alt="GridWorld"></p>
+<ul>
+<li>训练环境：某一个典型版本的的grid-world任务。场景包含 agent、目标和障碍。</li>
+<li>目标：agent 必须在网格中避开障碍的同时移动到目标。</li>
+<li>Agent设置：环境包含一个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置：<ul>
+<li>每一步 -0.01。</li>
+<li>agent 导航到目标网格位置时 +1.0（场景结束）。</li>
+<li>agent 移动到障碍物时 -1.0（场景结束）。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：无</li>
+<li>向量运动空间：（离散变量）4 个，对应于基本方向的移动。</li>
+<li>视觉观测：一个对应于 GridWorld 自上而下的视图。</li>
+</ul>
+</li>
+<li>重置参数：三个参数，分别对应于网格大小、障碍物数量和目标数量。</li>
+</ul>
+<h2 id="tennis">Tennis</h2>
+<p><img src="../images/tennis.png" alt="Tennis"></p>
+<ul>
+<li>训练环境：agent 控制球拍将球弹过球网的双人游戏。</li>
+<li>目标：agent 必须在彼此之间弹起网球，同时不能丢球或击球出界。</li>
+<li>Agent设置：环境包含两个链接到单个 brain（名为 TennisBrain）的 agent。在训练之后，您可以将另一个名为 MyBrain 的 brain 附加到其中一个 agent，从而与经过训练的模型进行游戏比赛。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>agent 击球过网时 +0.1。</li>
+<li>agent 让球落入自己的范围或者击球出界时 -0.1。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）8 个，分别对应于球和球拍的位置和速度。</li>
+<li>向量运动空间：（连续变量）2 个，分别对应于朝向球网或远离球网的运动，以及上下的运动。</li>
+<li>视觉观测：无</li>
+</ul>
+</li>
+<li>重置参数：一个参数，对应于球的大小。</li>
+</ul>
+<h2 id="push-block">Push Block</h2>
+<p><img src="../images/push.png" alt="Push"></p>
+<ul>
+<li>训练环境：一个平台，agent 可以在该平台上推动方块。</li>
+<li>目标：agent 必须将方块推向目标。</li>
+<li>Agent设置：环境包含一个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置：<ul>
+<li>每一步 -0.0025。</li>
+<li>方块接触到目标时 +1.0。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）15 个，分别对应于 agent、方块和目标的位置和速度。</li>
+<li>向量运动空间：（连续变量）2 个，分别对应于 X 和 Z 方向的移动。</li>
+<li>视觉观测：无。</li>
+</ul>
+</li>
+<li>重置参数：无。</li>
+</ul>
+<h2 id="wall-jump">Wall Jump</h2>
+<p><img src="../images/wall.png" alt="Wall"></p>
+<ul>
+<li>训练环境：一个平台环境，agent 可以在该环境中跳过墙。</li>
+<li>目标：agent 必须利用一个方块越过墙并到达目标。</li>
+<li>Agent设置：环境包含一个链接到两个不同 brain 的 agent。agent 链接到的 brain 根据墙的高度而变化。</li>
+<li>Agent 奖励函数设置：<ul>
+<li>每一步 -0.0005。</li>
+<li>agent 接触到目标时 +1.0。</li>
+<li>agent 掉下平台时 -1.0。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）16 个，分别对应于 agent、方块和目标的位置和速度以及墙的高度。</li>
+<li>向量运动空间：（离散变量）74 个，分别对应于 14 个射线投射，每个射线投射可检测 4 个可能的物体，加上 agent 的全局位置以及 agent 是否落地。</li>
+<li>视觉观测：无。</li>
+</ul>
+</li>
+<li>重置参数：4，对应于可能的墙壁的高度。</li>
+</ul>
+<h2 id="reacher">Reacher</h2>
+<p><img src="../images/reacher.png" alt="Tennis"></p>
+<ul>
+<li>训练环境：可以移动到目标位置的双关节臂。</li>
+<li>目标：agent 必须将手移动到目标位置，并保持在此处。</li>
+<li>Agent设置：环境包含 32 个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>当 agent 的手处于目标位置时，每过一步 +0.1。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）26 个，对应于两个机械臂 Rigidbody 的位置、旋转、速度和角速度。</li>
+<li>向量运动空间：（连续变量）4 个，对应于两个关节的两个方向上的转动。</li>
+<li>视觉观测：无</li>
+</ul>
+</li>
+<li>重置参数：两个，对应于目标大小和目标移动速度。</li>
+</ul>
+<h2 id="crawler">Crawler</h2>
+<p><img src="../images/crawler.png" alt="Crawler"></p>
+<ul>
+<li>训练环境：一种有 4 个手臂的生物，每个手臂分两节</li>
+<li>目标：agent 必须沿 x 轴移动其身体，并且保持不跌倒。</li>
+<li>Agent设置：环境包含 3 个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>+1 乘以 x 方向的速度</li>
+<li>跌倒时 -1。</li>
+<li>-0.01 乘以动作平方</li>
+<li>-0.05 乘以 y 位置变化</li>
+<li>-0.05 乘以 z 方向的速度</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）117 个，对应于每个肢体的位置、旋转、速度和角速度以及身体的加速度和角速度。</li>
+<li>向量运动空间：（连续变量）12 个，对应于适用于 12 个关节的扭矩。</li>
+<li>视觉观测：无</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="banana-collector">Banana Collector</h2>
+<p><img src="../images/banana.png" alt="Banana"></p>
+<ul>
+<li>训练环境：一个包含多个 agent 的环境，这些 agent 争相收集香蕉。</li>
+<li>目标：agent 必须学习尽可能接近更多的黄色香蕉，同时避开红色香蕉。</li>
+<li>Agent设置：环境包含 10 个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>接触黄色香蕉时 +1</li>
+<li>接触红色香蕉时 -1。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 brain。<ul>
+<li>向量观测空间：（连续变量）51 个，对应于 agent 的速度， agent 前进方向，以及 agent 对周围物体进行基于射线的感知。</li>
+<li>向量运动空间：（连续变量）3 个，对应于向前移动，绕 y 轴旋转，以及是否使用激光使其他 agent 瘫痪。</li>
+<li>视觉观测（可选）：每个 agent 的第一人称视图。</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="hallway">Hallway</h2>
+<p><img src="../images/hallway.png" alt="Hallway"></p>
+<ul>
+<li>训练环境：在一个环境中，agent 需要在房间内查找信息、记住信息并使用信息移动到正确目标。</li>
+<li>目标：移动到与房间内的方块的颜色相对应的目标。</li>
+<li>Agent设置：环境包含一个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>移动到正确目标时 +1。</li>
+<li>移动到错误目标时 -0.1。</li>
+<li>时间流逝惩罚 -0.0003。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 Brain：<ul>
+<li>向量观测空间：（连续变量）30 个，对应于针对物体、目标和墙壁的射线投射检测信号。</li>
+<li>向量运动空间：（离散变量）4 个，对应于 agent 旋转和前进/后退运动。</li>
+<li>视觉观测（可选）：agent 的第一人称视图。</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="bouncer">Bouncer</h2>
+<p><img src="../images/bouncer.png" alt="Bouncer"></p>
+<ul>
+<li>训练环境：在一个环境中，agent 需要按需决策。agent 必须决定在接触地面时如何进行下一次弹跳。</li>
+<li>目标：抓住漂浮的香蕉。跳跃次数有限。</li>
+<li>Agent设置：环境包含一个链接到单个 brain 的 agent。</li>
+<li>Agent 奖励函数设置（agent互相之间独立）：<ul>
+<li>抓住香蕉时 +1。</li>
+<li>弹跳出界时 -1。</li>
+<li>-0.05 乘以跳跃力的在各个方向上的平方和。能量消耗惩罚。</li>
+</ul>
+</li>
+<li>Brain 设置：一个有以下观测/运动空间的 Brain 的设置：<ul>
+<li>向量观测空间：（连续变量）6 个，对应于 agent 和香蕉的局部位置。</li>
+<li>向量运动空间：（连续变量）3 个，对应于 agent 为跳跃所用的力。</li>
+<li>视觉观测：无</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+<h2 id="soccer-twos">Soccer Twos</h2>
+<p><img src="../images/soccer.png" alt="SoccerTwos"></p>
+<ul>
+<li>训练环境：在一个环境中，四个 agent 在 2 对 2 玩具足球比赛中比赛。</li>
+<li>目标：<ul>
+<li>前锋：让球进入对手的球门。</li>
+<li>守门员：防止球进入自己的球门。</li>
+</ul>
+</li>
+<li>Agent设置：环境包含四个 agent，其中两个链接到一个 brain（前锋），两个链接到另一个 brain（守门员）。</li>
+<li>Agent 奖励函数设置（agent互相之间非独立）：<ul>
+<li>前锋：<ul>
+<li>球进入对手球门时 +1。</li>
+<li>球进入自己队的球门时 -0.1。</li>
+<li>存在性惩罚 -0.001。</li>
+</ul>
+</li>
+<li>守门员：<ul>
+<li>球进入自己队的球门时 -1。</li>
+<li>球进入对手球门时 +0.1。</li>
+<li>存在性奖励 +0.001。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Brain 设置：两个有以下观测/运动空间的 Brain：<ul>
+<li>向量观测空间：（连续变量）112，对应于局部的 14 个射线投射，每个射线投射可检测 7 个可能的物体类型，以及物体的距离。感知范围是 agent 前面的 180 度视角。</li>
+<li>向量运动空间：（离散变量）<ul>
+<li>前锋：6 个，对应于前进、后退、侧身移动以及旋转。</li>
+<li>守门员：4 个，对应于前进、后退、侧身移动。</li>
+</ul>
+</li>
+<li>视觉观测：无</li>
+</ul>
+</li>
+<li>重置参数：无</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/zh-CN/Learning-Environment-Examples.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

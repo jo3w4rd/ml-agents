@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UnityEnvironment </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UnityEnvironment ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/index.md" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="active">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="active">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="active">
+                      <a href="UnityEnvironment.html" title="UnityEnvironment" class="active">UnityEnvironment</a>
+                    </li>
+                    <li class="">
+                      <a href="BrainInfo.html" title="BrainInfo" class="">BrainInfo</a>
+                    </li>
+                    <li class="">
+                      <a href="BrainParameters.html" title="BrainParameters" class="">BrainParameters</a>
+                    </li>
+                    <li class="">
+                      <a href="Curriculum.html" title="Curriculum" class="">Curriculum</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnityException.html" title="UnityException" class="">UnityException</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnityEnvironmentException.html" title="UnityEnvironmentException" class="">UnityEnvironmentException</a>
+                          </li>
+                          <li class="">
+                            <a href="UnityActionException.html" title="UnityActionException" class="">UnityActionException</a>
+                          </li>
+                          <li class="">
+                            <a href="UnityTimeOutException.html" title="UnityTimeOutException" class="">UnityTimeOutException</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="class-unityenvironment">Class UnityEnvironment</h2>
+
+<h2 id="properties">Properties:</h2>
+<h3 id="academyname">academy_name</h3>
+<h3 id="brainnames">brain_names</h3>
+<h3 id="brains">brains</h3>
+<h3 id="curriculum">curriculum</h3>
+<h3 id="externalbrainnames">external_brain_names</h3>
+<h3 id="globaldone">global_done</h3>
+<h3 id="logfilepath">logfile_path</h3>
+<h3 id="numberbrains">number_brains</h3>
+<h3 id="numberexternalbrains">number_external_brains</h3>
+<h2 id="methods">Methods:</h2>
+<h3 id="initself-filename-workerid0-baseport5005-curriculumnone-seed0-dockertrainingfalse">__init__(self, file_name, worker_id=0, base_port=5005, curriculum=None, seed=0, docker_training=False)</h3>
+<p>Starts a new unity environment and establishes a connection with the environment.
+Notice: Currently communication between Unity and Python takes place over an open socket without authentication.
+Ensure that the network where training takes place is secure.</p>
+<p>:string file_name: Name of Unity environment binary.
+:int base_port: Baseline port number to connect to Unity environment over. worker_id increments over this.
+:int worker_id: Number to add to communication port (5005) [0]. Used for asynchronous agent scenarios.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">docker_training</td>
+<td style="text-align:left">Informs this class whether the process is being run within a container.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="closeself">close(self)</h3>
+<p>Sends a shutdown signal to the unity environment, and closes the socket connection.</p>
+<h3 id="resetself-trainmodetrue-confignone-lessonnone---dictstr-unityagentsbrainbraininfo">reset(self, train_mode=True, config=None, lesson=None) -&gt; Dict[str, unityagents.brain.BrainInfo]</h3>
+<p>Sends a signal to reset the unity environment.</p>
+<p><strong>Returns</strong>
+AllBrainInfo  : A Data structure corresponding to the initial reset state of the environment.</p>
+<h3 id="stepself-vectoractionnone-memorynone-textactionnone---dictstr-unityagentsbrainbraininfo">step(self, vector_action=None, memory=None, text_action=None) -&gt; Dict[str, unityagents.brain.BrainInfo]</h3>
+<p>Provides the environment with an action, moves the environment dynamics forward accordingly, and returns
+observation, state, and reward information to the agent.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">vector_action</td>
+<td style="text-align:left">Agent&#39;s vector action to send to environment. Can be a scalar or vector of int/floats.</td>
+</tr>
+<tr>
+<td style="text-align:left">memory</td>
+<td style="text-align:left">Vector corresponding to memory used for RNNs, frame-stacking, or other auto-regressive process.</td>
+</tr>
+<tr>
+<td style="text-align:left">text_action</td>
+<td style="text-align:left">Text action to send to environment for.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns</strong>
+AllBrainInfo  : A Data structure corresponding to the new state of the environment.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/python-api/UnityEnvironment.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

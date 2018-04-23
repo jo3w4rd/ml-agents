@@ -1,0 +1,1694 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/charlesw/Documents/ml-agents/doc-src",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Background-Jupyter.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Background-Jupyter.html",
+          "hash": "fRQ/BXcjZ3O5NeQZLSMc9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Background-Machine-Learning.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Background-Machine-Learning.html",
+          "hash": "Pjx9mwQpOnQYrVHhPwsjhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Background-TensorFlow.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Background-TensorFlow.html",
+          "hash": "avACpNxMPpyj/cYQe6jIgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Background-Unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Background-Unity.html",
+          "hash": "mbDn5RvzWJSWIZa2QwxVBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Feature-Memory.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Feature-Memory.html",
+          "hash": "88gFbZfmmMsQ9OpGJYzuUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Feature-Monitor.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Feature-Monitor.html",
+          "hash": "ZkPU3qI3OCEQBEVYTTuq2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Getting-Started-with-Balance-Ball.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Getting-Started-with-Balance-Ball.html",
+          "hash": "zN3XOW06Pnkk7S/bmqA6Cw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Glossary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Glossary.html",
+          "hash": "sjXWvroyXWt30SLKazi7BQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Installation-Windows.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Installation-Windows.html",
+          "hash": "80yI4uG6q1xNa90M/uDmIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/Installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Installation.html",
+          "hash": "Sjn9xHESbCNYelja+R7U1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Best-Practices.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Best-Practices.html",
+          "hash": "WNdcXoXAgjyjuIZAWrYFGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Create-New.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Create-New.html",
+          "hash": "bCmkKi+RgBKCzvK4Q857dQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-Academy.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-Academy.html",
+          "hash": "NrYzZ3rjSV0p20UG1NQDGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-Agents.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-Agents.html",
+          "hash": "t9BMgO7XVAfglmwDAQI89Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-Brains.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-Brains.html",
+          "hash": "GUPhnv0ZJewzrHACDYjhQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-External-Internal-Brains.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-External-Internal-Brains.html",
+          "hash": "+YEH/1t8bM2T8uRWsxaxrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-Heuristic-Brains.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-Heuristic-Brains.html",
+          "hash": "FzXXmdKjaeBC/WWW/jm5iQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design-Player-Brains.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design-Player-Brains.html",
+          "hash": "ZGaRFiPy3n/D1z/I+17/Bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Design.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Design.html",
+          "hash": "zkD1y6FsHMXYUlXp7fhKCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/Learning-Environment-Examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Learning-Environment-Examples.html",
+          "hash": "kLPub7nXXhRll8vs+DuHpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Limitations-and-Common-Issues.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Limitations-and-Common-Issues.html",
+          "hash": "1tzk64IoDmVOelucZj+89Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/ML-Agents-Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ML-Agents-Overview.html",
+          "hash": "5ZCaDA8PDJ7LzlkCJndxvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Migrating-v0.3.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Migrating-v0.3.html",
+          "hash": "dyFmpF1RUZ+HzOAxstSgvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Training-Curriculum-Learning.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Training-Curriculum-Learning.html",
+          "hash": "z3MFNOzUXojT8hWZzJS2TA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Training-Imitation-Learning.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Training-Imitation-Learning.html",
+          "hash": "1mCq/YVMRIStc2LbYrhOUw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Training-ML-Agents.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Training-ML-Agents.html",
+          "hash": "3RaOA90MXY8JFtgcQPQrxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Training-PPO.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Training-PPO.html",
+          "hash": "MRlWa6wlFWte7NAtrg5GVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Training-on-Amazon-Web-Service.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Training-on-Amazon-Web-Service.html",
+          "hash": "k2N3dvpFMZzcI4p3jONURA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Using-Docker.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Using-Docker.html",
+          "hash": "4ex2NDInKt7HrvamJPtM0g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Using-TensorFlow-Sharp-in-Unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Using-TensorFlow-Sharp-in-Unity.html",
+          "hash": "UUk6QdyCgBgksRvFebJjFQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Using-Tensorboard.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Using-Tensorboard.html",
+          "hash": "UPkGAeHtGS3ESnSQwxygXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Academy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Academy.html",
+          "hash": "TcNF1xaf+dFAanS0oZYOVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.AcademyParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.AcademyParameters.html",
+          "hash": "7Y0R0c9sb4Cxx0aXJ8ye8w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Agent.html",
+          "hash": "/a58aPsfXvIew8RoUxiYqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.AgentAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.AgentAction.html",
+          "hash": "W5t0viyMfaIplZQDhI45Tg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.AgentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.AgentInfo.html",
+          "hash": "08FTtvEdxIOGamilVJ6iDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.AgentParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.AgentParameters.html",
+          "hash": "aL9GV933i3AsfkKqNmt1fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.BCTeacherHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.BCTeacherHelper.html",
+          "hash": "ziMblgqel4O4v0p3JWw54Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Brain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Brain.html",
+          "hash": "YCnEehJt6gY3Y+oU4qoQyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.BrainParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.BrainParameters.html",
+          "hash": "0nsv9yKP+uz28U7uD8Rwdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.BrainType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.BrainType.html",
+          "hash": "9ETj97I7u0qkkupbQDZ9DA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Communicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Communicator.html",
+          "hash": "1XYGTZwCPkHWsH2BIgww6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.CoreBrain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.CoreBrain.html",
+          "hash": "2t7uLO/8QxfG1u0DNYqFng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.CoreBrainExternal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.CoreBrainExternal.html",
+          "hash": "KK9DQupd/Gt9hUe8oBtZjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.CoreBrainHeuristic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.CoreBrainHeuristic.html",
+          "hash": "5eZIP7TFB/F/HPGrKDEvGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.CoreBrainInternal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.CoreBrainInternal.html",
+          "hash": "NLFMgu8AXJXjIKU7JqqyEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.CoreBrainPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.CoreBrainPlayer.html",
+          "hash": "RWxhxBgt4BNH/AmjvtMXAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Decision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Decision.html",
+          "hash": "UOI+1F7mKp2DWR51yovnfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.EnvironmentConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.EnvironmentConfiguration.html",
+          "hash": "ddXPUbBh0ICgFlLSvXf/sg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.ExternalCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.ExternalCommand.html",
+          "hash": "ERwXVIOud5w4WfXFu7j5FA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.ExternalCommunicator.StepMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.ExternalCommunicator.StepMessage.html",
+          "hash": "QQMJ1LGd/G9/yqO65T8EgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.ExternalCommunicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.ExternalCommunicator.html",
+          "hash": "94KL90XYnmF23tjPTm1RXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.Monitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.Monitor.html",
+          "hash": "03J3NsuBnFZA4xst2NzJSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.MonitorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.MonitorType.html",
+          "hash": "2UGC/+6ur2DrhR99Bnzebw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.ResetParameters.ResetParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.ResetParameters.ResetParameter.html",
+          "hash": "TCNhcys5dfjGp/EutUKWFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.ResetParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.ResetParameters.html",
+          "hash": "qt6MX2LEXqxgmJR9R+ynGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.SpaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.SpaceType.html",
+          "hash": "CrFTolDhGBUVbDxxW4phEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.UnityAgentsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.UnityAgentsException.html",
+          "hash": "iBjHJrHKftyQSsUnztqfaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.resolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.resolution.html",
+          "hash": "Dq1gOTm/53h+f77ETM3rkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "csharp-api/Unity.MLAgents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "csharp-api/Unity.MLAgents.html",
+          "hash": "ANphCxoHKo6j+WdRS8gBNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/academy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/academy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/agent.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/agent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/anaconda_default.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/anaconda_default.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/anaconda_install.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/anaconda_install.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/balance.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/balance.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/banana.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/banana.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/banner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/basic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bc_teacher_helper.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bc_teacher_helper.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bouncer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bouncer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/brain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/brain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/broadcast.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/broadcast.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/conda_new.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/conda_new.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/crawler.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/crawler.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cuDNN_membership_required.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cuDNN_membership_required.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cuda_toolkit_directory.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/cuda_toolkit_directory.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cudnn_zip_files.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/cudnn_zip_files.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/curriculum.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/curriculum.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/curriculum_progress.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/curriculum_progress.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/docker_build_settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/docker_build_settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/edit_env_var.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/edit_env_var.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gridworld.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gridworld.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/hallway.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/hallway.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/internal_brain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/internal_brain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/learning_environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/learning_environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/learning_environment_basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/learning_environment_basic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/learning_environment_example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/learning_environment_example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/math.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/math.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ml-agents-LSTM.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ml-agents-LSTM.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-3DBallHierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-3DBallHierarchy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-BuildWindow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-BuildWindow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewProject.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewProject.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutAcademy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutAcademy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutAssignBrain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutAssignBrain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutBlock.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutBlock.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutBrain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutBrain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutFloor.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutFloor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutHierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutHierarchy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutSphere.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutSphere.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-NewTutSplash.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-NewTutSplash.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-Open3DBall.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-Open3DBall.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-SetExternalBrain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-SetExternalBrain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mlagents-TensorBoard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mlagents-TensorBoard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/monitor.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/monitor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/new_system_variable.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/new_system_variable.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/normalization.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/normalization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/path_variables.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/path_variables.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/player_brain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/player_brain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/push.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/reacher.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/reacher.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/rl_cycle.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/rl_cycle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/scene-hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/scene-hierarchy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/soccer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/soccer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/splitbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/splitbar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/system_variable_name_value.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/system_variable_name_value.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/tennis.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/tennis.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/unity-logo-rgb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity-logo-rgb.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/unity-wide.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity-wide.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/unity_linux_build_support.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/unity_linux_build_support.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/visual-observation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/visual-observation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/wall.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/wall.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Ds1C/EMrXSCthyGCv7RyMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/BrainInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/BrainInfo.html",
+          "hash": "L8bt3Y487NioPmGia85VMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/BrainParameters.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/BrainParameters.html",
+          "hash": "3BcEzNXeuMhM4sfNNXxYcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/Curriculum.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/Curriculum.html",
+          "hash": "sfWoVdJAYm2XFTEAHnilpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "python-api/Python-API.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/Python-API.html",
+          "hash": "vWJ/9QMS8gL22Qb+2NtHQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/UnityActionException.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/UnityActionException.html",
+          "hash": "0ocaKsQl9eDrsek0Ks/eOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/UnityEnvironment.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/UnityEnvironment.html",
+          "hash": "ABzGBKzwmLqrf1QwA+nM/A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/UnityEnvironmentException.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/UnityEnvironmentException.html",
+          "hash": "4rEJ+Uq7aguM3Q45nHH+gQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/UnityException.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/UnityException.html",
+          "hash": "RZSwqu4hbvZg3e1z0EyRRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "python-api/UnityTimeOutException.md",
+      "output": {
+        ".html": {
+          "relative_path": "python-api/UnityTimeOutException.html",
+          "hash": "UvJa/AdVBujhUs2rlAkuWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/Getting-Started-with-Balance-Ball.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/Getting-Started-with-Balance-Ball.html",
+          "hash": "YB+P3XU8Xnb86Izl5TcSbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/Installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/Installation.html",
+          "hash": "AuzNY2615wLCxCEtZGCxQg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/Learning-Environment-Create-New.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/Learning-Environment-Create-New.html",
+          "hash": "ZWI00jPJOeGaSPHZseOwSg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/Learning-Environment-Design.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/Learning-Environment-Design.html",
+          "hash": "la1IcJIZW1xf4FLryIfjOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/Learning-Environment-Examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/Learning-Environment-Examples.html",
+          "hash": "QlqKZGyYQEQbmt/DrxeSEw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/ML-Agents-Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/ML-Agents-Overview.html",
+          "hash": "wYMvNkGb2t67WauJpMYbvw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/README.html",
+          "hash": "aZh/tatSbzxUedw+w1JElQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "zh-CN/docs/Readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "zh-CN/docs/Readme.html",
+          "hash": "+0hYp00cYiUshSD/0jlFDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

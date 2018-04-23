@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Unity ML-Agents (Beta) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Unity ML-Agents (Beta) ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="">Manual</a>
+                  </li>
+                  <li class="active">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="active">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                    </li>
+                    <li class="">
+                      <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                    </li>
+                    <li class="">
+                      <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                    </li>
+                    <li class="">
+                      <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="docs/../images/unity-wide.png" align="middle" width="3000"></p>
+<h1 id="unity-ml-agents-beta">Unity ML-Agents (Beta)</h1>
+<p><strong>注意:</strong> 本文档为v0.3版本文档的部分翻译版，目前并不会随着英文版文档更新而更新。若要查看更新更全的英文版文档，请查看<a href="https://github.com/Unity-Technologies/ml-agents">这里</a>。</p>
+<p><strong>Unity Machine Learning Agents</strong> (ML-Agents) 是一款开源的 Unity 插件，
+使得我们得以在游戏环境和模拟环境中训练智能 agent。您可以使用 reinforcement learning（强化学习）、imitation learning（模仿学习）、neuroevolution（神经进化）或其他机器学习方法， 通过简单易用的 Python API进行控制，对 Agent 进行训练。我们还提供最先进算法的实现方式（基于 
+TensorFlow），让游戏开发者和业余爱好者能够轻松地
+训练用于 2D、3D 和 VR/AR 游戏的智能 agent。
+这些经过训练的 agent 可用于多种目的，
+包括控制 NPC 行为（采用各种设置，
+例如多个 agent 和对抗）、对游戏内部版本进行自动化测试、以及评估不同游戏设计决策的预发布版本。ML-Agents 对于游戏开发者和 AI 研究人员双方
+都有利，因为它提供了一个集中的平台，
+使得我们得以在 Unity 的丰富环境中测试 AI 的最新进展，
+并使结果为更多的研究者和游戏开发者所用。</p>
+<h2 id="功能">功能</h2>
+<ul>
+<li>用于控制 Unity 环境的 Python API</li>
+<li>10 多个示例 Unity 环境</li>
+<li>支持多种环境配置方案和训练方案</li>
+<li>使用 deep reinforcement learning（深度强化学习）技术训练带记忆的Agent</li>
+<li>可轻松定义的 Curriculum Learning（课程学习）方案</li>
+<li>通过广播 Agent 行为实现监督学习</li>
+<li>内置 Imitation Learning（模仿学习）支持</li>
+<li>通过按需决策功能实现灵活的 Agent 控制</li>
+<li>在环境中可查看神经网络的输出</li>
+<li>通过 Docker 实现简化设置（测试功能）</li>
+</ul>
+<h2 id="文档和参考">文档和参考</h2>
+<p><strong>除了安装和使用说明外，如需更多信息，
+请参阅我们的<a href="docs/Readme.html">文档主页</a>。</strong>如果您使用的
+是 v0.3 之前的 ML-Agents 版本，强烈建议您参考
+我们的<a href="/docs/Migrating-v0.3.md">关于迁移到 v0.3 的指南</a>。</p>
+<p>我们还发布了一系列与 ML-Agents 相关的博客文章：</p>
+<ul>
+<li>reinforcement learning（强化学习）概念概述
+(<a href="https://blogs.unity3d.com/2017/06/26/unity-ai-themed-blog-entries/">多臂强盗</a>
+和 <a href="https://blogs.unity3d.com/2017/08/22/unity-ai-reinforcement-learning-with-q-learning/">Q-learning</a>)</li>
+<li><a href="https://blogs.unity3d.com/2017/12/11/using-machine-learning-agents-in-a-real-game-a-beginners-guide/">在实际游戏中使用机器学习 Agent：初学者指南</a></li>
+<li><a href="https://blogs.unity3d.com/2018/02/28/introducing-the-winners-of-the-first-ml-agents-challenge/">文章</a>公布我们
+<a href="https://connect.unity.com/challenges/ml-agents-1">第一个 ML-Agents 挑战</a>的获胜者</li>
+<li><a href="https://blogs.unity3d.com/2018/01/23/designing-safer-cities-through-simulations/">文章</a>
+概述如何利用 Unity 作为模拟器来设计更安全的城市。</li>
+</ul>
+<p>除了我们自己的文档外，这里还有一些额外的相关文章：</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=bqsfkGbBU6k">Unity AI - Unity 3D 人工智能</a></li>
+<li><a href="https://mikecann.co.uk/machine-learning/a-game-developer-learns-machine-learning-intent/">游戏开发者学习机器学习</a></li>
+<li><a href="https://software.intel.com/en-us/articles/explore-unity-technologies-ml-agents-exclusively-on-intel-architecture">在 Intel 体系结构上单独研究 Unity Technologies ML-Agents</a></li>
+</ul>
+<h2 id="社区和反馈">社区和反馈</h2>
+<p>ML-Agents 是一个开源项目，我们鼓励并欢迎大家贡献自己的力量。
+如果您想做出贡献，请务必查看我们的
+<a href="/CONTRIBUTING.md">贡献准则</a>和
+<a href="/CODE_OF_CONDUCT.md">行为准则</a>。</p>
+<p>您可以通过 Unity Connect 和 GitHub 与我们
+以及更广泛的社区进行交流：</p>
+<ul>
+<li>加入我们的 
+<a href="https://connect.unity.com/messages/c/035fba4f88400000">Unity 机器学习频道</a>
+与使用 ML-Agents 的其他人以及对机器学习充满热情的 Unity 开发者
+交流。我们使用该频道来展示关于 ML-Agents
+（在更广泛的范围内，还包括游戏中的机器学习）的最新动态。</li>
+<li>如果您在使用 ML-Agents 时遇到任何问题，请
+<a href="https://github.com/Unity-Technologies/ml-agents/issues">提交问题</a>并
+确保提供尽可能多的详细信息。</li>
+</ul>
+<p>对于任何其他问题或反馈，请直接与 ML-Agents 团队联系，
+地址为 ml-agents@unity3d.com。</p>
+<h2 id="许可证">许可证</h2>
+<p><a href="LICENSE">Apache 许可证 2.0</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/zh-CN/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

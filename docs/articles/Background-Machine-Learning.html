@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Background: Machine Learning </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Background: Machine Learning ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="active">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Unity.html" title="Background Unity" class="">Background Unity</a>
+                                </li>
+                                <li class="active">
+                                  <a href="Background-Machine-Learning.html" title="Background Machine Learning" class="active">Background Machine Learning</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-TensorFlow.html" title="Background TensorFlow" class="">Background TensorFlow</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Jupyter.html" title="Background Jupyter Notebooks" class="">Background Jupyter Notebooks</a>
+                                </li>
+                                <li class="">
+                                  <a href="Using-Docker.html" title="Background Docker Setup" class="">Background Docker Setup</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Creating Learning Environments</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Best-Practices.html" title="Learning Environment Best Practices" class="">Learning Environment Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Monitor.html" title="Using the Monitor Class" class="">Using the Monitor Class</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-TensorFlow-Sharp-in-Unity.html" title="TensorFlowSharp in Unity" class="">TensorFlowSharp in Unity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Training</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Training-ML-Agents.html" title="Training ML-Agents" class="">Training ML-Agents</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-PPO.html" title="Training with Proximal Policy Optimization" class="">Training with Proximal Policy Optimization</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Curriculum-Learning.html" title="Training with Curriculum Learning" class="">Training with Curriculum Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Imitation-Learning.html" title="Training with Imitation Learning" class="">Training with Imitation Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Memory.html" title="Training with LSTM" class="">Training with LSTM</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-on-Amazon-Web-Service.html" title="Training on the Cloud with Amazon Web Services" class="">Training on the Cloud with Amazon Web Services</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-Tensorboard.html" title="Using TensorBoard to Observe Training" class="">Using TensorBoard to Observe Training</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Help</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Migrating-v0.3.html" title="Migrating to ML-Agents v.0.3" class="">Migrating to ML-Agents v.0.3</a>
+                          </li>
+                          <li class="">
+                            <a href="Glossary.html" title="ML-Agents Glossary" class="">ML-Agents Glossary</a>
+                          </li>
+                          <li class="">
+                            <a href="Limitations-and-Common-Issues.html" title="Limitations &amp; Common Issues" class="">Limitations &amp; Common Issues</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="background-machine-learning">Background: Machine Learning</h1>
+
+<p>Given that a number of users of ML-Agents might not have a formal machine 
+learning background, this page provides an overview to facilitate the 
+understanding of ML-Agents. However, We will not attempt to provide a thorough 
+treatment of machine learning as there are fantastic resources online.</p>
+<p>Machine learning, a branch of artificial intelligence, focuses on learning 
+patterns from data. The three main classes of machine learning algorithms
+include: unsupervised learning, supervised learning and reinforcement learning. 
+Each class of algorithm learns from a different type of data. The following 
+paragraphs provide an overview for each of these classes of machine learning, 
+as well as introductory examples. </p>
+<h2 id="unsupervised-learning">Unsupervised Learning</h2>
+<p>The goal of 
+<a href="https://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised learning</a> is to group or cluster similar items in a 
+data set. For example, consider the players of a game. We may want to group 
+the players depending on how engaged they are with the game. This would enable
+us to target different groups (e.g. for highly-engaged players we might
+invite them to be beta testers for new features, while for unengaged players
+we might email them helpful tutorials). Say that we wish to split our players 
+into two groups. We would first define basic attributes of the players, such 
+as the number of hours played, total money spent on in-app purchases and
+number of levels completed. We can then feed this data set (three attributes 
+for every player) to an unsupervised learning algorithm where we specify the 
+number of groups to be two. The algorithm would then split the data set of
+players into two groups where the players within each group would be similar
+to each other. Given the attributes we used to describe each player, in this
+case, the output would be a split of all the players into two groups, where 
+one group would semantically represent the engaged players and the second
+group would semantically represent the unengaged players.</p>
+<p>With unsupervised learning, we did not provide specific examples of which
+players are considered engaged and which are considered unengaged. We just
+defined the appropriate attributes and relied on the algorithm to uncover
+the two groups on its own. This type of data set is typically called an 
+unlabeled data set as it is lacking these direct labels. Consequently, 
+unsupervised learning can be helpful in situations where these labels can be
+expensive or hard to produce. In the next paragraph, we overview supervised 
+learning algorithms which accept input labels in addition to attributes.</p>
+<h2 id="supervised-learning">Supervised Learning</h2>
+<p>In <a href="https://en.wikipedia.org/wiki/Supervised_learning">supervised learning</a>,
+we do not want to just group similar items but directly
+learn a mapping from each item to the group (or class) that it belongs to.
+Returning to our earlier example of
+clustering players, let&#39;s say we now wish to predict which of our players are
+about to churn (that is stop playing the game for the next 30 days). We 
+can look into our historical records and create a data set that
+contains attributes of our players in addition to a label indicating whether
+they have churned or not. Note that the player attributes we use for this
+churn prediction task may be different from the ones we used for our earlier
+clustering task. We can then feed this data set (attributes <strong>and</strong> label for
+each player) into a supervised learning algorithm which would learn a mapping 
+from the player attributes to a label indicating whether that player 
+will churn or not. The intuition is that the supervised learning algorithm
+will learn which values of these attributes typically correspond to players
+who have churned and not churned (for example, it may learn that players
+who spend very little and play for very short periods will most likely churn).
+Now given this learned model, we can provide it the attributes of a
+new player (one that recently started playing the game) and it would output
+a <em>predicted</em> label for that player. This prediction is the algorithms
+expectation of whether the player will churn or not.
+We can now use these predictions to target the players
+who are expected to churn and entice them to continue playing the game.</p>
+<p>As you may have noticed, for both supervised and unsupervised learning, there
+are two tasks that need to be performed: attribute selection and model
+selection. Attribute selection (also called feature selection) pertains to
+selecting how we wish to represent the entity of interest, in this case, the
+player. Model selection, on the other hand, pertains to selecting the
+algorithm (and its parameters) that perform the task well. Both of these
+tasks are active areas of machine learning research and, in practice, require
+several iterations to achieve good performance.</p>
+<p>We now switch to reinforcement learning, the third class of
+machine learning algorithms, and arguably the one most relevant for ML-Agents.</p>
+<h2 id="reinforcement-learning">Reinforcement Learning</h2>
+<p><a href="https://en.wikipedia.org/wiki/Reinforcement_learning">Reinforcement learning</a>
+can be viewed as a form of learning for sequential
+decision making that is commonly associated with controlling robots (but is,
+in fact, much more general). Consider an autonomous firefighting robot that is
+tasked with navigating into an area, finding the fire and neutralizing it. At
+any given moment, the robot perceives the environment through its sensors (e.g.
+camera, heat, touch), processes this information and produces an action (e.g.
+move to the left, rotate the water hose, turn on the water). In other words,
+it is continuously making decisions about how to interact in this environment
+given its view of the world (i.e. sensors input) and objective (i.e.
+neutralizing the fire). Teaching a robot to be a successful firefighting
+machine is precisely what reinforcement learning is designed to do. </p>
+<p>More specifically, the goal of reinforcement learning is to learn a <strong>policy</strong>, 
+which is essentially a mapping from <strong>observations</strong> to <strong>actions</strong>. An 
+observation is what the robot can measure from its <strong>environment</strong> (in this 
+case, all its sensory inputs) and an action, in its most raw form, is a change
+to the configuration of the robot (e.g. position of its base, position of
+its water hose and whether the hose is on or off). </p>
+<p>The last remaining piece
+of the reinforcement learning task is the <strong>reward signal</strong>. When training a
+robot to be a mean firefighting machine, we provide it with rewards (positive 
+and negative) indicating how well it is doing on completing the task.
+Note that the robot does not <em>know</em> how to put out fires before it is trained. 
+It learns the objective because it receives a large positive reward when it puts 
+out the fire and a small negative reward for every passing second. The fact that 
+rewards are sparse (i.e. may not be provided at every step, but only when a 
+robot arrives at a success or failure situation), is a defining characteristic of 
+reinforcement learning and precisely why learning good policies can be difficult 
+(and/or time-consuming) for complex environments. </p>
+<p align="center">
+  <img src="../images/rl_cycle.png" alt="The reinforcement learning cycle.">
+</p>
+
+<p><a href="https://blogs.unity3d.com/2017/08/22/unity-ai-reinforcement-learning-with-q-learning/">Learning a policy</a>
+usually requires many trials and iterative
+policy updates. More specifically, the robot is placed in several
+fire situations and over time learns an optimal policy which allows it
+to put our fires more effectively. Obviously, we cannot expect to train a
+robot repeatedly in the real world, particularly when fires are involved. This
+is precisely why the use of 
+<a href="https://blogs.unity3d.com/2018/01/23/designing-safer-cities-through-simulations/">Unity as a simulator</a>
+serves as the perfect training grounds for learning such behaviors.
+While our discussion of reinforcement learning has centered around robots,
+there are strong parallels between robots and characters in a game. In fact,
+in many ways, one can view a non-playable character (NPC) as a virtual
+robot, with its own observations about the environment, its own set of actions
+and a specific objective. Thus it is natural to explore how we can
+train behaviors within Unity using reinforcement learning. This is precisely
+what ML-Agents offers. The video linked below includes a reinforcement
+learning demo showcasing training character behaviors using ML-Agents.</p>
+<p align="center">
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=fiQsmdwEGT8" target="_blank">
+        <img src="http://img.youtube.com/vi/fiQsmdwEGT8/0.jpg" alt="RL Demo" width="400" border="10">
+    </a>
+</p>
+
+<p>Similar to both unsupervised and supervised learning, reinforcement learning
+also involves two tasks: attribute selection and model selection.
+Attribute selection is defining the set of observations for the robot
+that best help it complete its objective, while model selection is defining
+the form of the policy (mapping from observations to actions) and its
+parameters. In practice, training behaviors is an iterative process that may
+require changing the attribute and model choices.</p>
+<h2 id="training-and-inference">Training and Inference</h2>
+<p>One common aspect of all three branches of machine learning is that they
+all involve a <strong>training phase</strong> and an <strong>inference phase</strong>. While the
+details of the training and inference phases are different for each of the
+three, at a high-level, the training phase involves building a model
+using the provided data, while the inference phase involves applying this
+model to new, previously unseen, data. More specifically:</p>
+<ul>
+<li>For our unsupervised learning
+example, the training phase learns the optimal two clusters based 
+on the data describing existing players, while the inference phase assigns a 
+new player to one of these two clusters. </li>
+<li>For our supervised learning example, the 
+training phase learns the mapping from player attributes to player label
+(whether they churned or not), and the inference phase predicts whether 
+a new player will churn or not based on that learned mapping. </li>
+<li>For our reinforcement learning example, the training phase learns the
+optimal policy through guided trials, and in the inference phase, the agent
+observes and tales actions in the wild using its learned policy.</li>
+</ul>
+<p>To briefly summarize: all three classes of algorithms involve training
+and inference phases in addition to attribute and model selections. What
+ultimately separates them is the type of data available to learn from. In
+unsupervised learning our data set was a collection of attributes, in
+supervised learning our data set was a collection of attribute-label pairs, 
+and, lastly, in reinforcement learning our data set was a collection of 
+observation-action-reward tuples.</p>
+<h2 id="deep-learning">Deep Learning</h2>
+<p><a href="https://en.wikipedia.org/wiki/Deep_learning">Deep learning</a> is a family of 
+algorithms that can be used to address any of the problems introduced 
+above. More specifically, they can be used to solve both attribute and 
+model selection tasks. Deep learning has gained popularity in recent 
+years due to its outstanding performance on several challenging machine learning 
+tasks. One example is <a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo</a>, 
+a  <a href="https://en.wikipedia.org/wiki/Computer_Go">computer Go</a> program, that 
+leverages deep learning, that was able to beat Lee Sedol (a Go world champion).</p>
+<p>A key characteristic of deep learning algorithms is their ability learn very
+complex functions from large amounts of training data. This makes them a
+natural choice for reinforcement learning tasks when a large amount of data
+can be generated, say through the use of a simulator or engine such as Unity.
+By generating hundreds of thousands of simulations of
+the environment within Unity, we can learn policies for very complex environments
+(a complex environment is one where the number of observations an agent perceives
+and the number of actions they can take are large).
+Many of the algorithms we provide in ML-Agents use some form of deep learning,
+built on top of the open-source library, <a href="Background-TensorFlow.html">TensorFlow</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/articles/Background-Machine-Learning.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

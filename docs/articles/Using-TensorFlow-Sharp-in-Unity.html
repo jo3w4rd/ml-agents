@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using TensorFlowSharp in Unity (Experimental) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using TensorFlowSharp in Unity (Experimental) ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/ML-Agents-Overview.html" title="Manual" class="active">Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../zh-CN/ML-Agents-Overview.html" title="Chinese Manual" class="">Chinese Manual</a>
+                  </li>
+                  <li class="">
+                    <a href="../csharp-api/Unity.MLAgents.html" title="C# Script Reference" class="">C# Script Reference</a>
+                  </li>
+                  <li class="">
+                    <a href="../python-api/Python-API.html" title="Python Script Reference" class="">Python Script Reference</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Getting Started</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="ML-Agents-Overview.html" title="ML-Agents Overview" class="">ML-Agents Overview</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Unity.html" title="Background Unity" class="">Background Unity</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-Machine-Learning.html" title="Background Machine Learning" class="">Background Machine Learning</a>
+                                </li>
+                                <li class="">
+                                  <a href="Background-TensorFlow.html" title="Background TensorFlow" class="">Background TensorFlow</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Installation.html" title="Installation &amp; Setup" class="">Installation &amp; Setup</a>
+                              
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="Background-Jupyter.html" title="Background Jupyter Notebooks" class="">Background Jupyter Notebooks</a>
+                                </li>
+                                <li class="">
+                                  <a href="Using-Docker.html" title="Background Docker Setup" class="">Background Docker Setup</a>
+                                </li>
+                              </ul>  </li>
+                          <li class="">
+                            <a href="Getting-Started-with-Balance-Ball.html" title="Getting Started with the 3D Balance Ball Environment" class="">Getting Started with the 3D Balance Ball Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Examples.html" title="Example Environment" class="">Example Environment</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Creating Learning Environments</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Learning-Environment-Create-New.html" title="Making a New Learning environment" class="">Making a New Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Design.html" title="Designing a Learning environment" class="">Designing a Learning environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Learning-Environment-Best-Practices.html" title="Learning Environment Best Practices" class="">Learning Environment Best Practices</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Monitor.html" title="Using the Monitor Class" class="">Using the Monitor Class</a>
+                          </li>
+                          <li class="active">
+                            <a href="Using-TensorFlow-Sharp-in-Unity.html" title="TensorFlowSharp in Unity" class="active">TensorFlowSharp in Unity</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Training</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Training-ML-Agents.html" title="Training ML-Agents" class="">Training ML-Agents</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-PPO.html" title="Training with Proximal Policy Optimization" class="">Training with Proximal Policy Optimization</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Curriculum-Learning.html" title="Training with Curriculum Learning" class="">Training with Curriculum Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-Imitation-Learning.html" title="Training with Imitation Learning" class="">Training with Imitation Learning</a>
+                          </li>
+                          <li class="">
+                            <a href="Feature-Memory.html" title="Training with LSTM" class="">Training with LSTM</a>
+                          </li>
+                          <li class="">
+                            <a href="Training-on-Amazon-Web-Service.html" title="Training on the Cloud with Amazon Web Services" class="">Training on the Cloud with Amazon Web Services</a>
+                          </li>
+                          <li class="">
+                            <a href="Using-Tensorboard.html" title="Using TensorBoard to Observe Training" class="">Using TensorBoard to Observe Training</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Help</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Migrating-v0.3.html" title="Migrating to ML-Agents v.0.3" class="">Migrating to ML-Agents v.0.3</a>
+                          </li>
+                          <li class="">
+                            <a href="Glossary.html" title="ML-Agents Glossary" class="">ML-Agents Glossary</a>
+                          </li>
+                          <li class="">
+                            <a href="Limitations-and-Common-Issues.html" title="Limitations &amp; Common Issues" class="">Limitations &amp; Common Issues</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-tensorflowsharp-in-unity-experimental">Using TensorFlowSharp in Unity (Experimental)</h1>
+
+<p>ML-Agents allows you to use pre-trained <a href="https://www.tensorflow.org/programmers_guide/graphs">TensorFlow graphs</a> inside your Unity games. This support is possible thanks to <a href="https://github.com/migueldeicaza/TensorFlowSharp">the TensorFlowSharp project</a>. The primary purpose for this support is to use the TensorFlow models produced by the ML-Agents own training programs, but a side benefit is that you can use any TensorFlow model.</p>
+<p><em>Notice: This feature is still experimental. While it is possible to embed trained models into Unity games, Unity Technologies does not officially support this use-case for production games at this time. As such, no guarantees are provided regarding the quality of experience. If you encounter issues regarding battery life, or general performance (especially on mobile), please let us know.</em></p>
+<h2 id="supported-devices-">Supported devices :</h2>
+<ul>
+<li>Linux 64 bits</li>
+<li>Mac OS X 64 bits</li>
+<li>Windows 64 bits</li>
+<li>iOS (Requires additional steps)</li>
+<li>Android</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Unity 2017.1 or above</li>
+<li>Unity TensorFlow Plugin (<a href="https://s3.amazonaws.com/unity-ml-agents/0.3/TFSharpPlugin.unitypackage">Download here</a>)</li>
+</ul>
+<h1 id="using-tensorflowsharp-with-ml-agents">Using TensorFlowSharp with ML-Agents</h1>
+<p>Go to <code>Edit</code> -&gt; <code>Player Settings</code> and add <code>ENABLE_TENSORFLOW</code> to the <code>Scripting Define Symbols</code> for each type of device you want to use (<strong><code>PC, Mac and Linux Standalone</code></strong>, <strong><code>iOS</code></strong> or <strong><code>Android</code></strong>).</p>
+<p>Set the Brain you used for training to <code>Internal</code>. Drag <code>your_name_graph.bytes</code> into Unity and then drag it into The <code>Graph Model</code> field in the Brain. </p>
+<h2 id="using-your-own-trained-graphs">Using your own trained graphs</h2>
+<p>The TensorFlow data graphs produced by the ML-Agents training programs work without any additional settings.</p>
+<p>In order to use a TensorFlow data graph in Unity, make sure the nodes of your graph have appropriate names. You can assign names to nodes in TensorFlow :</p>
+<pre><code class="lang-python">variable= tf.identity(variable, name=&quot;variable_name&quot;)
+</code></pre><p>We recommend using the following naming conventions:</p>
+<ul>
+<li>Name the batch size input placeholder <code>batch_size</code></li>
+<li>Name the input vector observation placeholder <code>state</code></li>
+<li>Name the output node <code>action</code></li>
+<li>Name the recurrent vector (memory) input placeholder <code>recurrent_in</code> (if any)</li>
+<li>Name the recurrent vector (memory) output node <code>recurrent_out</code> (if any)</li>
+<li>Name the observations placeholders input placeholders <code>visual_observation_i</code> where <code>i</code> is the index of the observation (starting at 0)</li>
+</ul>
+<p>You can have additional placeholders for float or integers but they must be placed in placeholders of dimension 1 and size 1. (Be sure to name them.)</p>
+<p>It is important that the inputs and outputs of the graph are exactly the ones you receive and return when training your model with an <code>External</code> brain. This means you cannot have any operations such as reshaping outside of the graph.
+The object you get by calling <code>step</code> or <code>reset</code> has fields <code>vector_observations</code>, <code>visual_observations</code> and <code>memories</code> which must correspond to the placeholders of your graph. Similarly, the arguments <code>action</code> and <code>memory</code> you pass to <code>step</code> must correspond to the output nodes of your graph.</p>
+<p>While training your Agent using the Python API, you can save your graph at any point of the training. Note that the argument <code>output_node_names</code> must be the name of the tensor your graph outputs (separated by a coma if using multiple outputs). In this case, it will be either <code>action</code> or <code>action,recurrent_out</code> if you have recurrent outputs.</p>
+<pre><code class="lang-python">from tensorflow.python.tools import freeze_graph
+
+freeze_graph.freeze_graph(input_graph = model_path +&#39;/raw_graph_def.pb&#39;,
+              input_binary = True,
+              input_checkpoint = last_checkpoint,
+              output_node_names = &quot;action&quot;,
+              output_graph = model_path +&#39;/your_name_graph.bytes&#39; ,
+              clear_devices = True, initializer_nodes = &quot;&quot;,input_saver = &quot;&quot;,
+              restore_op_name = &quot;save/restore_all&quot;, filename_tensor_name = &quot;save/Const:0&quot;)
+</code></pre><p>Your model will be saved with the name <code>your_name_graph.bytes</code> and will contain both the graph and associated weights. Note that you must save your graph as a .bytes file so Unity can load it.</p>
+<p>In the Unity Editor, you must specify the names of the nodes used by your graph in the <strong>Internal</strong> brain Inspector window. If you used a scope when defining your graph, specify it in the <code>Graph Scope</code> field. </p>
+<p><img src="../images/internal_brain.png" alt="Internal Brain Inspector"></p>
+<p>See <a href="Learning-Environment-Design-External-Internal-Brains.html#internal-brain">Internal Brain</a> for more information about using Internal Brains.</p>
+<p>If you followed these instructions well, the agents in your environment that use this brain will use your fully trained network to make decisions.</p>
+<h1 id="ios-additional-instructions-for-building">iOS additional instructions for building</h1>
+<ul>
+<li>Once you build for iOS in the editor, Xcode will launch.</li>
+<li>In <code>General</code> -&gt; <code>Linked Frameworks and Libraries</code>:<ul>
+<li>Add a framework called <code>Accelerate.framework</code></li>
+<li>Remove the library <code>libtensorflow-core.a</code></li>
+</ul>
+</li>
+<li>In <code>Build Settings</code>-&gt;<code>Linking</code>-&gt;<code>Other Linker Flags</code>:<ul>
+<li>Double click on the flag list to expand the list</li>
+<li>Add <code>-force_load</code></li>
+<li>Drag the library <code>libtensorflow-core.a</code> from the <code>Project Navigator</code> on the left under <code>Libraries/ML-Agents/Plugins/iOS</code> into the flag list, after <code>-force_load</code>.</li>
+</ul>
+</li>
+</ul>
+<h1 id="using-tensorflowsharp-without-ml-agents">Using TensorFlowSharp without ML-Agents</h1>
+<p>Beyond controlling an in-game agent, you can also use TensorFlowSharp for more general computation. The following instructions describe how to generally embed TensorFlow models without using the ML-Agents framework.</p>
+<p>You must have a TensorFlow graph, such as <code>your_name_graph.bytes</code>, made using TensorFlow&#39;s <code>freeze_graph.py</code>. The process to create such graph is explained in the <a href="#using-your-own-trained-graphs">Using your own trained graphs</a> section.</p>
+<h2 id="inside-of-unity">Inside of Unity</h2>
+<p>To load and use a TensorFlow data graph in Unity:</p>
+<ol>
+<li><p>Put the file, <code>your_name_graph.bytes</code>, into Resources.</p>
+</li>
+<li><p>At the top off your C# script, add the line:</p>
+</li>
+</ol>
+<pre><code class="lang-csharp">using TensorFlow;
+</code></pre><ol>
+<li>If you will be building for android, you must add this block at the start of your code :</li>
+</ol>
+<pre><code class="lang-csharp">#if UNITY_ANDROID
+TensorFlowSharp.Android.NativeBinding.Init();
+#endif
+</code></pre><ol>
+<li>Load your graph as a text asset into a variable, such as <code>graphModel</code>:</li>
+</ol>
+<pre><code class="lang-csharp">TextAsset graphModel = Resources.Load (your_name_graph) as TextAsset;
+</code></pre><ol>
+<li>You then must instantiate the graph in Unity by adding the code :</li>
+</ol>
+<pre><code class="lang-csharp">graph = new TFGraph ();
+graph.Import (graphModel.bytes);
+session = new TFSession (graph);
+</code></pre><ol>
+<li>Assign the input tensors for the graph. For example, the following code assigns a one dimensional input tensor of size 2:</li>
+</ol>
+<pre><code class="lang-csharp">var runner = session.GetRunner ();
+runner.AddInput (graph [&quot;input_placeholder_name&quot;] [0], new float[]{ placeholder_value1, placeholder_value2 });
+</code></pre><p>You must provide all required inputs to the graph. Supply one input per TensorFlow placeholder.</p>
+<ol>
+<li>To calculate and access the output of your graph, run the following code.</li>
+</ol>
+<pre><code class="lang-csharp">runner.Fetch (graph[&quot;output_placeholder_name&quot;][0]);
+float[,] recurrent_tensor = runner.Run () [0].GetValue () as float[,];
+</code></pre><p>Note that this example assumes the output array is a two-dimensional tensor of floats. Cast to a long array if your outputs are integers.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/ml-agents/blob/feature-docfx/doc-src/articles/Using-TensorFlow-Sharp-in-Unity.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
